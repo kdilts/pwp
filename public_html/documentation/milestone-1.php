@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>kdilts PWP</title>
+		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<header>
@@ -21,6 +22,16 @@
 			<hr/>
 			<section>
 				<h4>Goal</h4>
+				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
+			</section>
+			<hr/>
+			<section>
+				<h5>Persona</h5>
+				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
+			</section>
+			<hr/>
+			<section>
+				<h6>Use Case</h6>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 		</main>
