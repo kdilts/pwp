@@ -11,27 +11,27 @@
 		</header>
 		<main>
 			<section>
-				<h2>Purpose</h2>
+				<h2 class="subheading">Purpose</h2>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 			<hr/>
 			<section>
-				<h3>Audience</h3>
+				<h3 class="subheading">Audience</h3>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 			<hr/>
 			<section>
-				<h4>Goal</h4>
+				<h4 class="subheading">Goal</h4>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 			<hr/>
 			<section>
-				<h5>Persona</h5>
+				<h5 class="subheading">Persona</h5>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 			<hr/>
 			<section>
-				<h6>Use Case</h6>
+				<h6 class="subheading">Use Case</h6>
 				<p>asd;flkjasdf;lkajsfd;laskdjfa;sldkfjas;ldfkjasd;lfkj</p>
 			</section>
 		</main>
