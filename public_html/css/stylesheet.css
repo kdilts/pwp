@@ -1,7 +1,23 @@
-body { background-color: grey; }
-h1, p { text-align: center; }
+body { background-color: #323232; }
+
+h1, p, li {
+	color: #A5C261;
+}
+
+p {
+	text-indent: 5em;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+#titleheader {
+	text-align: center;
+}
+
 .subheading {
-	font-size: 20px;
+	font-size: 24px;
 	margin: auto;
-	border: 1px dotted black;
+	color: #D2691E;
 }
