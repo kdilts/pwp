@@ -5,7 +5,7 @@ h1, p, li {
 }
 
 p {
-	text-indent: 5em;
+	text-indent: 2em;
 }
 
 li {
@@ -20,4 +20,5 @@ li {
 	font-size: 24px;
 	margin: auto;
 	color: #D2691E;
+	text-decoration: underline;
 }

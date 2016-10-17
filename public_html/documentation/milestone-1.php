@@ -28,19 +28,19 @@
 			<section>
 				<h5 class="subheading">Persona</h5>
 				<ul>
-					<li>Name:</li>
-					<li>Age:</li>
-					<li>Profession:</li>
-					<li>Technology:</li>
-					<li>Attitudes and behaviors:</li>
-					<li>Frustrations and needs:</li>
-					<li>Goals:</li>
+					<li>Name: John Price</li>
+					<li>Age: 45</li>
+					<li>Profession: Hiring manager at a software development company</li>
+					<li>Technology: John primarily uses a Windows 10 desktop in his office at work.</li>
+					<li>Attitudes and behaviors: John is swamped with prospective candidates, and has other aspects of his job to attend to as well. He spends a small portion of each day filtering through potential new employee's applications. He is quick to dismiss an applicant if he does not quickly see something that stands out in that candidates profile.</li>
+					<li>Frustrations and needs: John is frustrated by the overwhelming quantity of nearly identical applications he has to sort through each day. He needs someone to create something that separates their application from the rest.</li>
+					<li>Goals: John's goal is to hire a new web developer as soon as possible.</li>
 				</ul>
 			</section>
 
 			<section>
 				<h6 class="subheading">Use Case</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac urna in leo malesuada luctus. Integer malesuada lacus ligula. Sed laoreet blandit risus in blandit. Donec eleifend ultrices elit, commodo facilisis nunc dictum ut. Etiam pulvinar scelerisque diam, quis finibus nulla pretium quis. Nullam gravida condimentum porta. Vivamus ultricies, velit quis tristique tempor, dui lacus commodo sem, at dapibus purus nulla in elit. In hac habitasse platea dictumst. Maecenas tincidunt suscipit tortor, vitae vulputate est facilisis facilisis. Praesent laoreet sem ut diam viverra, nec aliquet odio aliquam. Vivamus id felis sit amet sem sodales elementum. Ut imperdiet diam eget sollicitudin vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p></p>
 			</section>
 		</main>
 	</body>
