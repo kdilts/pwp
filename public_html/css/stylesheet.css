@@ -1,7 +1,7 @@
 body { background-color: #323232; }
 
 h1, p, li {
-	color: #A5C261;
+	color: #b2cb78;
 }
 
 p {
@@ -19,6 +19,6 @@ li {
 .subheading {
 	font-size: 24px;
 	margin: auto;
-	color: #D2691E;
+	color: #ff8024;
 	text-decoration: underline;
 }
