@@ -10,7 +10,15 @@
 			<h1 id="titleheader">kdilts PWP Milestone 2 &alpha;</h1>
 		</header>
 		<main>
-
+			<section>
+				<h2 class="subheading">Content Strategy</h2>
+				<p>
+					testing
+				</p>
+			</section>
+			<section>
+				<h3 class="subheading">Wire Frames</h3>
+			</section>
 		</main>
 	</body>
 </html>
