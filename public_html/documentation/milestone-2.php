@@ -22,12 +22,12 @@
 				<div class="flexContainer">
 					<div style="margin-left: 10%">
 						<h5>Desktop</h5>
-						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
+						<img src="../landing_page_desktop_wireframe.png" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
 					<div style="width:40%"></div>
 					<div style="margin-right: 10%">
 						<h5>Mobile</h5>
-						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
+						<img src="../landing_page_mobile_wireframe.png" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
 				</div>
 				<h4>Project Pages</h4>
