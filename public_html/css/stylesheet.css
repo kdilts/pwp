@@ -22,3 +22,11 @@ li {
 	color: #ff8024;
 	text-decoration: underline;
 }
+
+.flexContainer {
+	display: flex;
+}
+
+h4, h5{
+	text-align: center;
+}
