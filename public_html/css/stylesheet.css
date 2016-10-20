@@ -35,3 +35,7 @@ img {
 	display: block;
 	margin: 0 auto;
 }
+
+#photo1, #photo2 {
+	display: none;
+}

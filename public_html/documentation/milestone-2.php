@@ -4,6 +4,22 @@
 		<meta charset="utf-8"/>
 		<title>kdilts PWP</title>
 		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				$("#hide1").click(function() {
+					$("#photo1").fadeToggle(function() {
+					});
+				});
+			});
+
+			$( document ).ready(function() {
+				$("#hide2").click(function() {
+					$("#photo2").fadeToggle(function() {
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<header>
@@ -19,12 +35,12 @@
 			<section>
 				<h3 class="subheading">Wire Frames</h3>
 				<div>
-					<div>
-						<h5>Desktop</h5>
+					<h4 id="hide1" class="subheading">Desktop (click to show)</h4>
+					<div id="photo1">
 						<img src="../landing_page_desktop_wireframe.png"/>
 					</div>
-					<div>
-						<h5>Mobile</h5>
+					<h5 id="hide2" class="subheading">Mobile (click to show)</h5>
+					<div id="photo2">
 						<img src="../landing_page_mobile_wireframe.jpg"/>
 					</div>
 				</div>
