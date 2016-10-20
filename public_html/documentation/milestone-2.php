@@ -18,7 +18,7 @@
 			</section>
 			<section>
 				<h3 class="subheading">Wire Frames</h3>
-				<h4>Home Page</h4>
+				<h4>Landing Page</h4>
 				<div class="flexContainer">
 					<div style="margin-left: 10%">
 						<h5>Desktop</h5>
@@ -30,19 +30,7 @@
 						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
 				</div>
-				<h4>List Page</h4>
-				<div class="flexContainer">
-					<div style="margin-left: 10%">
-						<h5>Desktop</h5>
-						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
-					</div>
-					<div style="width:40%"></div>
-					<div style="margin-right: 10%">
-						<h5>Mobile</h5>
-						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
-					</div>
-				</div>
-				<h4>Project Page</h4>
+				<h4>Project Pages</h4>
 				<p>No wire frame for this one. I will be importing projects that I have already finished. Because these projects were designed to be run on UNM's desktop computers, many of them will not be mobile friendly.</p>
 			</section>
 		</main>
