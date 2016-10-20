@@ -20,22 +20,24 @@
 				<h3 class="subheading">Wire Frames</h3>
 				<h4>Home Page</h4>
 				<div class="flexContainer">
-					<div>
+					<div style="margin-left: 10%">
 						<h5>Desktop</h5>
 						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
-					<div>
+					<div style="width:40%"></div>
+					<div style="margin-right: 10%">
 						<h5>Mobile</h5>
 						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
 				</div>
 				<h4>List Page</h4>
 				<div class="flexContainer">
-					<div>
+					<div style="margin-left: 10%">
 						<h5>Desktop</h5>
 						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
-					<div>
+					<div style="width:40%"></div>
+					<div style="margin-right: 10%">
 						<h5>Mobile</h5>
 						<img src="#" style="border:2px solid black; width:300px; height:300px;"/>
 					</div>
