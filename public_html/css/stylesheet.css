@@ -30,3 +30,8 @@ li {
 h4, h5{
 	text-align: center;
 }
+
+img {
+	display: block;
+	margin: 0 auto;
+}
