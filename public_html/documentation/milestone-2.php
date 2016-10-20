@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="titleheader">kdilts PWP</h1>
+			<h1 id="titleheader">kdilts PWP Milestone 2 &alpha;</h1>
 		</header>
 		<main>
 
