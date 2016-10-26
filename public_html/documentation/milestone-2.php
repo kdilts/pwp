@@ -37,11 +37,11 @@
 				<div>
 					<h4 id="hide1" class="subheading">Desktop (click to show)</h4>
 					<div id="photo1">
-						<img src="../landing_page_desktop_wireframe.png"/>
+						<img src="images/landing_page_desktop_wireframe.png"/>
 					</div>
 					<h5 id="hide2" class="subheading">Mobile (click to show)</h5>
 					<div id="photo2">
-						<img src="../landing_page_mobile_wireframe.jpg"/>
+						<img src="images/landing_page_mobile_wireframe.jpg"/>
 					</div>
 				</div>
 			</section>
