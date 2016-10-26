@@ -21,12 +21,12 @@
 			</section>
 
 			<section>
-				<h4 class="subheading">Goal</h4>
+				<h3 class="subheading">Goal</h3>
 				<p>My goal is to create a nice looking gallery that will leave people with a good impression of my web design skills.</p>
 			</section>
 
 			<section>
-				<h5 class="subheading">Persona</h5>
+				<h3 class="subheading">Persona</h3>
 				<ul>
 					<li>Name: John Price</li>
 					<li>Age: 45</li>
