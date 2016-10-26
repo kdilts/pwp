@@ -1,11 +1,18 @@
-body { background-color: #323232; }
+body {
+	background-color: #323232;
+}
 
-h1, p, li {
+h1 {
+	color: #b2cb78;
+}
+
+li {
 	color: #b2cb78;
 }
 
 p {
 	text-indent: 2em;
+	color: #b2cb78;
 }
 
 li {
@@ -27,7 +34,11 @@ li {
 	display: flex;
 }
 
-h4, h5{
+h4 {
+	text-align: center;
+}
+
+h5 {
 	text-align: center;
 }
 
@@ -36,6 +47,10 @@ img {
 	margin: 0 auto;
 }
 
-#photo1, #photo2 {
+#photo1 {
+	display: none;
+}
+
+#photo2 {
 	display: none;
 }
