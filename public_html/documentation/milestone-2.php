@@ -33,7 +33,7 @@
 					<li>
 						Header Bar
 						<ul>
-							<li>1</li>
+							<li>This will tie the site together by providing links to my home page, and all my various projects. I would like it to be animated with effects and drop downs that happen as the mouse hovers over different parts of it.</li>
 						</ul>
 					</li>
 					<li>
@@ -45,14 +45,20 @@
 					<li>
 						Gallery
 						<ul>
-							<li>1</li>
+							<li>This will display thumbnails for each of my project pages. I would like to use flikity to make three carousels that will allow the user to rotate through the thumbnails by swiping left and right.</li>
 						</ul>
 					</li>
 					<li>
 						Individual App Pages
 						<ul>
 							<li>
-								Each one of these will be a different project that I have created. Most of them consist of a full screen canvas with interactive content. I will try to use PHP require once to include a header bar on top of each of these projects to tie my site together and make it easy to navigate.
+								Each one of these will be a different project that I have created. Most of them consist of a full screen canvas with interactive content. I will try to use PHP require once to include a header bar on top of each of these projects to make it easy to navigate. The applications I'm showing off break down into three categories:
+								<ul>
+									<li>Astronomy</li>
+									<li>Games / Demos</li>
+									<li>Java / Downloadable</li>
+								</ul>
+								The first two categories fit the full screen canvas description. The Java applications need to be downloaded and run locally. These could just be screenshots with a description, or they may not be featured in the gallery.
 							</li>
 						</ul>
 					</li>
