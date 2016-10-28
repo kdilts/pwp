@@ -28,9 +28,35 @@
 		<main>
 			<section>
 				<h2 class="subheading">Content Strategy</h2>
-				<p>
-					I plan on creating a gallery of my old projects to show potential employers. This site will be multi-page, with one page devoted to each piece of my prior work. I would also like to have an about me section on the home page that features my contact info, alink to my resume, and my professional photo, as well animated pull down nav bar. It would be nice to have a couple of pages that will show screenshots of each project in a particular category, for example, an astronomy page with a picture, link, and small description of each of my astronomy projects.
-				</p>
+				<ul>
+					<li>This site will be a gallery of my prior work to show to employers.</li>
+					<li>
+						Header Bar
+						<ul>
+							<li>1</li>
+						</ul>
+					</li>
+					<li>
+						About Me
+						<ul>
+							<li>The about me will contain my professional photo, my name and contact info, a link to my resume, and an email contact form.</li>
+						</ul>
+					</li>
+					<li>
+						Gallery
+						<ul>
+							<li>1</li>
+						</ul>
+					</li>
+					<li>
+						Individual App Pages
+						<ul>
+							<li>
+								Each one of these will be a different project that I have created. Most of them consist of a full screen canvas with interactive content. I will try to use PHP require once to include a header bar on top of each of these projects to tie my site together and make it easy to navigate.
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 			<section>
 				<h3 class="subheading">Wire Frames</h3>
