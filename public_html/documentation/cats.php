@@ -5,49 +5,49 @@
 			<img src="http://r.ddmcdn.com/s_f/o_1/cx_0/cy_0/cw_300/ch_300/w_300/APL/uploads/2014/10/kitten-cuteness300.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat1.jpg"/>
+			<img src="../documentation/images/cat1.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat2.jpg"/>
+			<img src="../documentation/images/cat2.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src=cat3.jpg"/>
+			<img src="../documentation/images/cat3.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat4.jpg"/>
+			<img src="../documentation/images/cat4.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat5.jpg"/>
+			<img src="../documentation/images/cat5.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat1.jpg"/>
+			<img src="../documentation/images/cat1.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat2.jpg"/>
+			<img src="../documentation/images/cat2.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat3.jpg"/>
+			<img src="../documentation/images/cat3.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat4.jpg"/>
+			<img src="../documentation/images/cat4.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat5.jpg"/>
+			<img src="../documentation/images/cat5.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat1.jpg"/>
+			<img src="../documentation/images/cat1.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat2.jpg"/>
+			<img src="../documentation/images/cat2.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat3.jpg"/>
+			<img src="../documentation/images/cat3.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat4.jpg"/>
+			<img src="../documentation/images/cat4.jpg"/>
 		</div>
 		<div class="carousel-cell">
-			<img src="cat5.jpg"/>
+			<img src="../documentation/images/cat5.jpg"/>
 		</div>
 	</div>
 </section>
