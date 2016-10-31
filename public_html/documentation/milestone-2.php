@@ -81,8 +81,6 @@
 			</section>
 			<?php
 			require("cats.php");
-			require("cats.php");
-			require("cats.php");
 			?>
 		</main>
 	</body>
