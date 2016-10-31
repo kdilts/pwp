@@ -75,7 +75,7 @@
 					</div>
 					<h5 id="hide2" class="subheading">Mobile (click to show)</h5>
 					<div id="photo2">
-						<img src="images/landing_page_mobile_wireframe.jpg"/>
+						<img src="images/landing_page_mobile_wireframe.png"/>
 					</div>
 				</div>
 			</section>
