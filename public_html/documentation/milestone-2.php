@@ -4,25 +4,11 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>kdilts PWP</title>
-		<link href="../css/stylesheet.css" rel="stylesheet" type="text/css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script>
-			$( document ).ready(function() {
-				$("#hide1").click(function() {
-					$("#photo1").fadeToggle(function() {
-					});
-				});
-			});
-
-			$( document ).ready(function() {
-				$("#hide2").click(function() {
-					$("#photo2").fadeToggle(function() {
-					});
-				});
-			});
-		</script>
 		<link rel="stylesheet" href="../css/flickity.css" media="screen">
+		<link rel="stylesheet" href="../css/stylesheet.css" type="text/css"/>
 		<script src="../javascript/flickity.pkgd.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../javascript/script.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header>
@@ -72,11 +58,11 @@
 				<div>
 					<h4 id="hide1" class="subheading">Desktop (click to show)</h4>
 					<div id="photo1">
-						<img src="images/landing_page_desktop_wireframe.png"/>
+						<img src="images/landing_page_desktop_wireframe.png" alt="This should be a desktop wireframe."/>
 					</div>
 					<h5 id="hide2" class="subheading">Mobile (click to show)</h5>
 					<div id="photo2">
-						<img src="images/landing_page_mobile_wireframe.png"/>
+						<img src="images/landing_page_mobile_wireframe.png" alt="This should be a mobile wireframe."/>
 					</div>
 				</div>
 			</section>
