@@ -18,7 +18,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="carousel" data-flickity>
+						<div class="carousel" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
 								<img src="images/milkyway.jpg" class="img-rounded"/>
