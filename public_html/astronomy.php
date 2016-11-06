@@ -6,6 +6,18 @@
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
 		<title>Astronomy Project Gallery</title>
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				$carousel = $('.carousel');
+				data = $carousel.data('flickity');
+
+				$carousel.on( 'select.flickity', function() {
+					console.log( 'Flickity select ' + data.selectedIndex )
+				})
+			});
+		</script>
+
 	</head>
 	<body>
 
@@ -19,7 +31,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="carousel" data-flickity='{ "wrapAround": true }'>
+						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
 								<img src="images/milkyway.jpg" class="img-rounded"/>
