@@ -15,19 +15,19 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-3">
-						<img src="#"/>
+					<div class="col-sm-3">
+						<img src="images/me.jpg" class="img-responsive img-circle"/>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-sm-6">
 						<ul>
 							<li>Kevin Dilts</li>
 							<li>UNM blah blah</li>
 							<li>Email: kevin@kevindilts.net</li>
 							<li>Phone: 505-206-6400</li>
-							<li><a href="#">Resume</a></li>
+							<li><a href="resume.pdf">Resume</a></li>
 						</ul>
 					</div>
-					<div class="col-xs-3">
+					<div class="col-sm-3">
 						<img src="#"/>
 					</div>
 				</div>
