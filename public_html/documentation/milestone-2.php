@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>kdilts PWP</title>
 		<link rel="stylesheet" href="../css/flickity.css" media="screen">
-		<link rel="stylesheet" href="../css/stylesheet.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/docstylesheet.css" type="text/css"/>
 		<script src="../javascript/flickity.pkgd.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="../javascript/script.js" type="text/javascript"></script>
