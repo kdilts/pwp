@@ -1,3 +1,18 @@
 body {
 	background-color: grey;
 }
+
+div.carousel-cell img {
+	width:400px;
+	height:400px;
+	margin: 10px 10px;
+}
+
+div.carousel-cell h1 {
+	text-align: center;
+}
+
+.cell-text {
+	width:400px;
+	margin: 10px 10px;
+}
