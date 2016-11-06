@@ -5,6 +5,7 @@
 		require_once("lib/head_utils.php");
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+		<title>PWP Milestone 2b</title>
 	</head>
 	<body>
 

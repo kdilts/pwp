@@ -21,8 +21,6 @@
 <!-- Latest compiled and minified Bootstrap JavaScript, all compiled plugins included -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+<link rel="stylesheet" href="css/flickity.css" media="screen">
 
 <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-
-<title>PWP Milestone 2b</title>
