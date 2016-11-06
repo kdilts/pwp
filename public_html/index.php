@@ -8,5 +8,33 @@
 	</head>
 	<body>
 
+		<header>
+			<?php
+			require_once("lib/navbar.php");
+			?>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3">
+						<img src="#"/>
+					</div>
+					<div class="col-xs-6">
+						<ul>
+							<li>Kevin Dilts</li>
+							<li>UNM blah blah</li>
+							<li>Email: kevin@kevindilts.net</li>
+							<li>Phone: 505-206-6400</li>
+							<li><a href="#">Resume</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<img src="#"/>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main></main>
+		<footer></footer>
+
 	</body>
 </html>
