@@ -28,7 +28,9 @@
 						</ul>
 					</div>
 					<div class="col-sm-3">
-						<img src="#"/>
+						<div style="width100%; height:100%; border:2px solid black">
+							<p>placeholder for email contact form</p>
+						</div>
 					</div>
 				</div>
 			</div>
