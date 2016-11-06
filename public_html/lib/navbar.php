@@ -15,7 +15,8 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Astronomy Apps</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="astronomy.php">Astronomy Apps</a></li>
 				<li><a href="#">Games and Demos</a></li>
 				<li><a href="#">Java Downloads</a></li>
 				<li><a href="#">Resume</a></li>

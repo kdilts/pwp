@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<?php
 		require_once("lib/head_utils.php");
@@ -35,8 +35,6 @@
 				</div>
 			</div>
 		</header>
-		<main></main>
-		<footer></footer>
 
 	</body>
 </html>
