@@ -5,10 +5,8 @@
 		require_once("lib/head_utils.php");
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
-		<title>Astronomy Project Gallery</title>
-
 		<script src="javascript/cellDescriptionVisiblity.js" rel="script" type="text/javascript"></script>
-
+		<title>Astronomy Project Gallery</title>
 	</head>
 	<body>
 
