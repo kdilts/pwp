@@ -17,10 +17,22 @@ div.carousel-cell h1 {
 	margin: 10px 10px;
 }
 
-.cell-description {
-
+#cell-description-1 {
+	display: none;
 }
 
-.cell-description .is-selected{
+#cell-description-2 {
+	display: none;
+}
 
+#cell-description-3 {
+	display: none;
+}
+
+#cell-description-4 {
+	display: none;
+}
+
+#cell-description-5 {
+	display: none;
 }
