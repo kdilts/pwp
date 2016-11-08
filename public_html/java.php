@@ -23,42 +23,18 @@
 						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
-								<img src="#" class="img-rounded"/>
+								<img src="images/juliaset.jpg" class="img-rounded"/>
 								<div class="cell-description">
-									<h1></h1>
-									<p></p>
+									<h1>Julia Set Fractals</h1>
+									<p>julia</p>
 								</div>
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="#" class="img-rounded"/>
+								<img src="images/zombie.jpg" class="img-rounded"/>
 								<div class="cell-description">
-									<h1></h1>
-									<p></p>
-								</div>
-							</div>
-
-							<div class="carousel-cell cell-text">
-								<img src="#" class="img-rounded"/>
-								<div class="cell-description">
-									<h1></h1>
-									<p></p>
-								</div>
-							</div>
-
-							<div class="carousel-cell cell-text">
-								<img src="#" class="img-rounded"/>
-								<div class="cell-description">
-									<h1></h1>
-									<p></p>
-								</div>
-							</div>
-
-							<div class="carousel-cell cell-text">
-								<img src="#" class="img-rounded"/>
-								<div class="cell-description">
-									<h1></h1>
-									<p></p>
+									<h1>Zombie Defense</h1>
+									<p>zombie</p>
 								</div>
 							</div>
 
