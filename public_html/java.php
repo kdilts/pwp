@@ -5,7 +5,7 @@
 		/*grab current directory*/
 		$CURRENT_DIR = __DIR__;
 		/*set page title here*/
-		$PAGE_TITLE = "PWP Milestone 2b";
+		$PAGE_TITLE = "Java Downloads Gallery";
 		?>
 
 		<?php
@@ -13,7 +13,6 @@
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
 		<script src="javascript/cellDescriptionVisiblity.js" rel="script" type="text/javascript"></script>
-		<title>Java Downloads Gallery</title>
 	</head>
 	<body>
 
