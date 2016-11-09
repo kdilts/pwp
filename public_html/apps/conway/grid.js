@@ -2,8 +2,8 @@ grid = function(x,y){
 	this.sx = x;
 	this.sy = y;
 
-	this.tileWidth;
-	this.tileHeight;
+	this.tileWidth = 0;
+	this.tileHeight = 0;
 
 	this.content = [];
 
@@ -14,7 +14,7 @@ grid = function(x,y){
 				this.content[i][j] = 0;
 			}
 		}
-	}
+	};
 
 	this.randomize = function(){
 		for(var i = 0; i < this.sx; i++){
@@ -26,9 +26,9 @@ grid = function(x,y){
 				}
 			}
 		}
-	}
+	};
 
-	this.disp = function(){
+	/*this.disp = function(){
 		var str;
 		for(var i = 0; i < this.sx; i++){
 			str = '';
@@ -39,9 +39,9 @@ grid = function(x,y){
 			console.log(str);
 			console.log('');
 		}
-	}
+	};*/
 
-	this.get = function(x,y){ return this.content[x][y]; }
+	this.get = function(x,y){ return this.content[x][y]; };
 
 	this.getAdj = function(x,y,wrap){
 		var total = 0;
@@ -83,9 +83,9 @@ grid = function(x,y){
 		}
 
 		return total;
-	}
+	};
 
-	this.set = function(x,y,s){ this.content[x][y] = s; }
+	this.set = function(x,y,s){ this.content[x][y] = s; };
 
 	this.toggle = function(x,y){
 		if(this.content[x][y] == 0){
@@ -93,7 +93,7 @@ grid = function(x,y){
 		}else{
 			this.content[x][y] = 0;
 		}
-	}
+	};
 
 	this.draw = function(gfx,width,height){
 		// clear
@@ -122,7 +122,7 @@ grid = function(x,y){
 		gfx.lineWidth = 1;
 
 		// vertical
-		for(var i = 1; i < this.sx; i++){
+		for(i = 1; i < this.sx; i++){
 			gfx.beginPath();
 			gfx.moveTo(i*this.tileWidth,0);
 			gfx.lineTo(i*this.tileWidth,height);
@@ -130,7 +130,7 @@ grid = function(x,y){
 		}
 
 		// horizontal
-		for(var i = 1; i < this.sy; i++){
+		for(i = 1; i < this.sy; i++){
 			gfx.beginPath();
 			gfx.moveTo(0,i*this.tileHeight);
 			gfx.lineTo(width,i*this.tileHeight);
@@ -139,4 +139,4 @@ grid = function(x,y){
 
 	}
 
-}
+};
