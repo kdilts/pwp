@@ -23,7 +23,7 @@
 						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
-								<a href="apps/conway/conway.html">
+								<a href="apps/conway/conway.php">
 									<img src="images/conway.jpg" class="img-rounded"/>
 								</a>
 								<div class="cell-description">
