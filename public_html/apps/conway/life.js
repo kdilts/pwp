@@ -43,7 +43,7 @@ window.onload = function(){
 		var tileY = Math.floor(clickY / gameGrid.tileHeight);
 
 		gameGrid.toggle(tileX,tileY);
-	}
+	};
 
 	playButton.onclick = function(){
 		if(playing){
@@ -53,11 +53,11 @@ window.onload = function(){
 			playing = true;
 			playButton.value = "Pause";
 		}
-	}
+	};
 
-	clearButton.onclick = function(){ gameGrid.init(); }
+	clearButton.onclick = function(){ gameGrid.init(); };
 
-	randomizeButton.onclick = function(){ gameGrid.randomize(); }	
+	randomizeButton.onclick = function(){ gameGrid.randomize(); };
 
 	wrapButton.onclick = function(){
 		if(wrap){
@@ -67,22 +67,22 @@ window.onload = function(){
 			wrap = true;
 			wrapButton.value = "Disable Wrap";
 		}
-	}
+	};
 
 	speedSlider.onchange = function(){
 		speed = speedSlider.value;
 		speedCount = 0;
-	}
+	};
 
 	setInterval(render, 1000/60);
-}
+};
 
 
 
 window.onresize = function(){
 	cwidth = canvas.width;
 	cheight = canvas.height;
-}
+};
 
 render = function(){
 	gameGrid.draw(gfx,cwidth,cheight);
@@ -90,7 +90,7 @@ render = function(){
 		if(speedCount == speed*10){ update(); speedCount = 0; }
 		speedCount++;
 	}
-}
+};
 
 update = function(){
 	// <2 neighbors - die
@@ -108,11 +108,11 @@ update = function(){
 		}
 	}
 
-	for(var i in killList){
+	for(i in killList){
 		gameGrid.set(killList[i][0],killList[i][1],0);
 	}
 
-	for(var i in addList){
+	for(i in addList){
 		gameGrid.set(addList[i][0],addList[i][1],1);
 	}
-}
+};
