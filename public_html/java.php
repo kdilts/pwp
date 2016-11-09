@@ -23,7 +23,9 @@
 						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/juliaset.jpg" class="img-rounded"/>
+								<a href="apps/jars/juliaset.jar">
+									<img src="images/juliaset.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Julia Set Fractals</h1>
 									<p>julia</p>
@@ -31,7 +33,9 @@
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/zombie.jpg" class="img-rounded"/>
+								<a href="apps/jars/game.jar">
+									<img src="images/zombie.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Zombie Defense</h1>
 									<p>zombie</p>
