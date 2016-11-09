@@ -1,6 +1,13 @@
 <html>
 	<head>
 		<?php
+		/*grab current directory*/
+		$CURRENT_DIR = __DIR__;
+		/*set page title here*/
+		$PAGE_TITLE = "Conway";
+		?>
+
+		<?php
 		require_once("../../lib/head_utils.php");
 		?>
 		<script type="text/javascript" src="grid.js"></script>
