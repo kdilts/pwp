@@ -15,11 +15,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="astronomy.php">Astronomy Apps</a></li>
-				<li><a href="demos.php">Games and Demos</a></li>
-				<li><a href="java.php">Java Downloads</a></li>
-				<li><a href="resume.pdf">Resume</a></li>
+				<li><a href="<?php echo $PREFIX; ?>/index.php">Home</a></li>
+				<li><a href="<?php echo $PREFIX; ?>/astronomy.php">Astronomy Apps</a></li>
+				<li><a href="<?php echo $PREFIX; ?>/demos.php">Games and Demos</a></li>
+				<li><a href=<?php echo $PREFIX; ?>/java.php">Java Downloads</a></li>
+				<li><a href="<?php echo $PREFIX; ?>/resume.pdf">Resume</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
