@@ -23,7 +23,9 @@
 						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/conway.jpg" class="img-rounded"/>
+								<a href="apps/conway/conway.html">
+									<img src="images/conway.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Conway's Game of Life</h1>
 									<p>conway</p>
