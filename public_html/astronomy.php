@@ -2,6 +2,13 @@
 <html lang="en">
 	<head>
 		<?php
+		/*grab current directory*/
+		$CURRENT_DIR = __DIR__;
+		/*set page title here*/
+		$PAGE_TITLE = "PWP Milestone 2b";
+		?>
+
+		<?php
 		require_once("lib/head_utils.php");
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
