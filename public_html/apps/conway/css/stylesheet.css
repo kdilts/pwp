@@ -1,0 +1,45 @@
+body {
+	background-color: grey;
+}
+
+input {
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+}
+
+.flexcontainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexobject {
+	margin-left:10px;
+}
+
+#mycanvas {
+	border:2px solid black;
+	width:600px;
+	height:600px;
+}
+
+#instructions {
+	margin-left:50px;
+	width:500px;
+	height:500px;
+}
+
+#sliderLabel {
+	text-align:center;
+	font-size:20px;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+}
