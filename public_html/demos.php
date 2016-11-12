@@ -59,7 +59,9 @@
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/convex.jpg" class="img-rounded"/>
+								<a href="apps/convex/convex.php">
+									<img src="images/convex.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Convex Hull Problem</h1>
 									<p>convex</p>
@@ -67,7 +69,9 @@
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/wsearch.jpg" class="img-rounded"/>
+								<a href="apps/wordsearch/wordsearch.php">
+									<img src="images/wsearch.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Word Search Generator</h1>
 									<p>word search</p>

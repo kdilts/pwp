@@ -1,0 +1,19 @@
+input {
+	font-size: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: bold;
+}
+
+.flexcontainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexobject {
+	margin-left:50px;
+}
