@@ -49,7 +49,9 @@
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/snake.jpg" class="img-rounded"/>
+								<a href="apps/snake/snake.php">
+									<img src="images/snake.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Snake</h1>
 									<p>snake</p>

@@ -1,0 +1,25 @@
+.flexcontainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+canvas{
+	border:2px solid black;
+}
+
+#instructions {
+	margin-left:10px;
+}
+
+body {
+	background-color: grey;
+}
