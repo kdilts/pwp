@@ -24,7 +24,7 @@ window.onload = function(){
 	initGrid();
 
 	setInterval(render,1000/60);
-}
+};
 
 resetGame = function(){
 	initGrid();
@@ -34,7 +34,7 @@ resetGame = function(){
 	holdP = genRand();
 	lose = false;
 	play = true;
-}
+};
 
 render = function(){
 	clear();
@@ -63,7 +63,7 @@ render = function(){
 		stepCounter = maxSteps;
 		step();
 	}
-}
+};
 
 step = function(){
 	// if pause do nothing
@@ -93,7 +93,7 @@ step = function(){
 			lose = true;
 		}
 	}
-}
+};
 
 addToGrid = function(){
 	var p = rotate(curP,curR);
@@ -105,7 +105,7 @@ addToGrid = function(){
 			grid[coords[0]][coords[1]] = curP+1;
 		}
 	}
-}
+};
 
 spawn = function(){
 	curP = nextP;
@@ -114,7 +114,7 @@ spawn = function(){
 	curY = 0;
 	curR = 0;
 	swapLock = false;
-}
+};
 
 attemptMove = function(dir){
 	if(dir == 'left'){
@@ -126,13 +126,13 @@ attemptMove = function(dir){
 		if(isValid(curX,curY+1)){ curY++; }
 		else{ hitBottom = true; }
 	}
-}
+};
 
 attemptRotate = function(){
 	curR++;
 	curR %= 4;
 	if(!isValid(curX,curY)){ curR--; if(curR < 0){ curR = 3; } }
-}
+};
 
 isValid = function(x,y){
 	var p = rotate(curP,curR);
@@ -147,7 +147,7 @@ isValid = function(x,y){
 		}
 	}
 	return true;
-}
+};
 
 drawCurrentPiece = function(){
 	var offset = gridToPix(curX,curY);
@@ -170,7 +170,7 @@ drawCurrentPiece = function(){
 	//box(0,0,20,20,true);
 
 	gfx.restore();
-}
+};
 
 drawGridLines = function(){
 	gfx.lineWidth = 2;
@@ -179,11 +179,11 @@ drawGridLines = function(){
 			edgeWidth+i*(cwidth/20),cheight);
 	}
 
-	for(var i = 0; i < 24; i++){
+	for(i = 0; i < 24; i++){
 		line(edgeWidth,i*cheight/24,cwidth-edgeWidth,i*cheight/24);
 	}
 	gfx.lineWidth = 1;
-}
+};
 
 clear = function(){
 	setColor('black');
@@ -209,7 +209,7 @@ clear = function(){
 	littleGrid(20,40,holdP);
 	littleGrid(cwidth-20-(edgeWidth-40),40,nextP);
 
-}
+};
 
 littleGrid = function(x,y,p){
 	gfx.save();
@@ -234,7 +234,7 @@ littleGrid = function(x,y,p){
 	// grid
 	setColor('grey');
 	gfx.lineWidth = 2;
-	for(var i = 0; i < 4; i++){
+	for(i = 0; i < 4; i++){
 		line( // horizontal
 			0,i*(edgeWidth-40)/4,
 			edgeWidth-40,i*(edgeWidth-40)/4
@@ -247,4 +247,4 @@ littleGrid = function(x,y,p){
 	}
 
 	gfx.restore();
-}
+};

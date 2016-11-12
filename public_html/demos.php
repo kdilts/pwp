@@ -39,7 +39,9 @@
 							</div>
 
 							<div class="carousel-cell cell-text">
-								<img src="images/tetris.jpg" class="img-rounded"/>
+								<a href="apps/tetris/tetris.php">
+									<img src="images/tetris.jpg" class="img-rounded"/>
+								</a>
 								<div class="cell-description">
 									<h1>Tetris</h1>
 									<p>tetris</p>

@@ -6,24 +6,24 @@
 
 var genRand = function(){
 	return Math.floor(Math.random()*7);
-}
+};
 
-var pixToGrid = function(x,y){
+/*var pixToGrid = function(x,y){
 	return [
 		Math.floor(x/(cwidth/20)),
 		Math.floor(y/(cheight/24))
 	];
-}
+};*/
 
 var gridToPix = function(x,y){
 	return [
 		x*(cwidth/20),
 		y*(cheight/24)
 	];
-}
+};
 
-var xyToi = function(x,y){ return y*4+x; }
-var iToxy = function(i){ return [i%4,Math.floor(i/4)]; }
+var xyToi = function(x,y){ return y*4+x; };
+var iToxy = function(i){ return [i%4,Math.floor(i/4)]; };
 
 var toGrid = function(p){
 	var ans = [[],[],[],[]];
@@ -33,7 +33,7 @@ var toGrid = function(p){
 		}
 	}
 	return ans;
-}
+};
 
 var fromGrid = function(g){
 	var ans = '';
@@ -43,7 +43,7 @@ var fromGrid = function(g){
 		}
 	}
 	return ans;
-}
+};
 
 var rotate = function(p,r){
 	var ans = toGrid(p);
@@ -58,8 +58,8 @@ var rotate = function(p,r){
 			}
 		}
 
-		for(var x in ans){ // change columns
-			for(var y in ans[x]){
+		for(x in ans){ // change columns
+			for(y in ans[x]){
 				ans[x][y] = temp[(ans.length-1)-x][y];
 			}
 		}
@@ -67,7 +67,7 @@ var rotate = function(p,r){
 	}
 
 	return fromGrid(ans);
-}
+};
 
 var types = [
 	'****............', // i block
@@ -87,5 +87,5 @@ var colors = [
 	'red', // z
 	'green', // s
 	'blue', // j
-	'rgb(250,125,0)',  // L
+	'rgb(250,125,0)'  // L
 ];

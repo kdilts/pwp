@@ -12,7 +12,7 @@ var initGrid = function(){
 			grid[x][y] = 0;
 		}
 	}
-}
+};
 
 var drawGrid = function(){
 	gfx.save();
@@ -24,12 +24,11 @@ var drawGrid = function(){
 		}
 	}
 	gfx.restore();
-}
+};
 
 var isEmpty = function(x,y){
-	if(grid[x][y] == 0){ return true; }
-	return false;
-}
+	return grid[x][y] == 0;
+};
 
 checkLose = function(){
 	if(grid[3][0] !== 0){ return true; }
@@ -37,7 +36,7 @@ checkLose = function(){
 	if(grid[5][0] !== 0){ return true; }
 	if(grid[6][0] !== 0){ return true; }
 	return false;
-}
+};
 
 checkLines = function(){
 	for(var y = 0; y < grid[0].length; y++){
@@ -49,15 +48,15 @@ checkLines = function(){
 			clearLine(y);
 		}
 	}
-}
+};
 
 clearLine = function(y){
 	score++;
 	for(var i = y-1; i > 0; i--){ lineDown(i); }
-}
+};
 
 lineDown = function(y){
 	for(var x in grid){
 		grid[x][y+1] = grid[x][y];
 	}
-}
+};

@@ -9,7 +9,7 @@ var rotBuffer = 0;
 
 window.onkeydown = function(e){
 	downKeys[''+e.which] = true;
-}
+};
 
 window.onkeyup = function(e){
 	upKeys[''+e.which] = true;
@@ -35,11 +35,7 @@ window.onkeyup = function(e){
 		rotBuffer++;
 	}
 	if(e.which == 80){ // p
-		if(play){
-			play = false;
-		}else{
-			play = true;
-		}
+		play = !play;
 	}
 	if(e.which == 82){ resetGame(); } // r
-}
+};
