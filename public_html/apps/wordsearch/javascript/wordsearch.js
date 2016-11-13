@@ -25,7 +25,7 @@ var diagonal; var cross;
 window.onresize = function(){
 	cwidth = cheight = canvas.width = canvas.height = window.innerHeight*.8;
 	tileSize = cwidth/gridSize;
-}
+};
 
 window.onload = function(){
 	canvas = document.getElementById('mycanvas');
@@ -43,11 +43,11 @@ window.onload = function(){
 	backward = document.getElementById('backward');
 	diagonal = document.getElementById('diagonal');
 
-	submitButton.onclick = function(){ parse(); }
+	submitButton.onclick = function(){ parse(); };
 
 	init();
 	setInterval(render,1000/60);
-}
+};
 
 parse = function(){
 	var raw = wordBox.value;
@@ -56,7 +56,7 @@ parse = function(){
 	gridSize = sizebox.value;
 	tileSize = cwidth/gridSize;
 	init();
-}
+};
 
 init = function(){
 	for(var i = 0; i < gridSize; i++){
@@ -89,7 +89,7 @@ init = function(){
 			placeDiagU(wordList[w]);
 		}
 	}
-}
+};
 
 render = function(){
 	// clear
@@ -126,7 +126,7 @@ render = function(){
 	}
 	gfx.restore();
 
-}
+};
 
 placeHoriz = function(word){
 	var len = word.length;
@@ -150,11 +150,11 @@ placeHoriz = function(word){
 	}
 
 	// add letters to grid and mark reserved
-	for(var c in chrs){
+	for(c in chrs){
 		letters[parseInt(sx)+parseInt(c)][sy] = chrs[c];
 		reserved[parseInt(sx)+parseInt(c)][sy] = true;
 	}
-}
+};
 
 placeVert = function(word){
 	var len = word.length;
@@ -178,11 +178,11 @@ placeVert = function(word){
 	}
 
 	// add letters to grid and mark reserved
-	for(var c in chrs){
+	for(c in chrs){
 		letters[sx][parseInt(sy)+parseInt(c)] = chrs[c];
 		reserved[sx][parseInt(sy)+parseInt(c)] = true;
 	}	
-}
+};
 
 placeDiagD = function(word){
 	var len = word.length;
@@ -211,11 +211,11 @@ placeDiagD = function(word){
 	}
 
 	// add letters to grid and mark reserved
-	for(var c in chrs){
+	for(c in chrs){
 		letters[parseInt(sx)+parseInt(c)][parseInt(sy)+parseInt(c)] = chrs[c];
 		reserved[parseInt(sx)+parseInt(c)][parseInt(sy)+parseInt(c)] = true;
 	}	
-}
+};
 
 placeDiagU = function(word){
 	var len = word.length;
@@ -244,40 +244,35 @@ placeDiagU = function(word){
 	}
 
 	// add letters to grid and mark reserved
-	for(var c in chrs){
+	for(c in chrs){
 		letters[parseInt(sx)+parseInt(c)][parseInt(sy)-parseInt(c)] = chrs[c];
 		reserved[parseInt(sx)+parseInt(c)][parseInt(sy)-parseInt(c)] = true;
 	}	
-}
-
-/*placeVertCross = function(word){} // TODO
-placeHorizCross = function(word){} // TODO
-placeDiagDCross = function(word){} // TODO
-placeDiagUCross = function(word){} // TODO*/
+};
 
 line = function(x1,y1,x2,y2){
 	gfx.beginPath();
 	gfx.moveTo(x1,y1);
 	gfx.lineTo(x2,y2);
 	gfx.stroke();
-}
+};
 
 lerp = function(oldMin,oldMax,oldVal,newMin,newMax){
 	return (oldVal-oldMin)/(oldMax-oldMin)*(newMax-newMin)+newMin;
-}
+};
 
-vec2 = function(x,y){ this.x = x; this.y = y; }
-add = function(v1, v2){ return new vec2(v1.x+v2.x, v1.y+v2.y); }
-sub = function(v1, v2){ return new vec2(v1.x-v2.x, v1.y-v2.y); }
-neg = function(v){ return new vec2(-v.x, -v.y); }
-mag = function(v){ return Math.sqrt(Math.pow(v.x,2) + Math.pow(v.y,2)); }
-dot = function(v1,v2){ return v1.x*v2.x + v1.y*v2.y; }
-unit = function(v){ return new vec2(v.x/mag(v), v.y/mag(v)); }
-mult = function(v,s){ return new vec2(v.x*s, v.y*s); }
+vec2 = function(x,y){ this.x = x; this.y = y; };
+add = function(v1, v2){ return new vec2(v1.x+v2.x, v1.y+v2.y); };
+sub = function(v1, v2){ return new vec2(v1.x-v2.x, v1.y-v2.y); };
+neg = function(v){ return new vec2(-v.x, -v.y); };
+mag = function(v){ return Math.sqrt(Math.pow(v.x,2) + Math.pow(v.y,2)); };
+dot = function(v1,v2){ return v1.x*v2.x + v1.y*v2.y; };
+unit = function(v){ return new vec2(v.x/mag(v), v.y/mag(v)); };
+mult = function(v,s){ return new vec2(v.x*s, v.y*s); };
 
 rot = function(v,r){
 	return new vec2(
 		v.x*Math.cos(r) - v.y*Math.sin(r),
 		v.x*Math.sin(r) + v.y*Math.cos(r)
 	);
-}
+};

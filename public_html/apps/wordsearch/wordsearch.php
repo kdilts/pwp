@@ -19,15 +19,15 @@
 		require_once("../../lib/navbar.php");
 		?>
 
-		<h1 style="margin-top:50px">Word Search</h1>
+		<h1>Word Search</h1>
 
 		<div class="flexcontainer">
-			<div style='margin-right:10px; height:80%; width:20%'>
+			<div id="menu">
 				<form>
 					Grid Size:<input id='sizebox' value='20' type='textbox' maxlength='2' size='2'/>
 					<br>
 					Word List:
-					<textarea id='wordbox' rows='10' cols='50' style='resize:none;'></textarea>
+					<textarea id='wordbox' rows='10' cols='50'></textarea>
 					<input id='submit' value='Update' type='button'/>
 					<br>
 					<input id='backward' type='checkbox'/>Backwards Words
@@ -40,9 +40,9 @@
 				</form>
 			</div>
 
-			<canvas id="mycanvas" style="border:2px solid black;"></canvas>
+			<canvas id="mycanvas"></canvas>
 
-			<div style="margin-left:10px; height:80%; width:20%;">
+			<div id="instructions">
 				<h2>Instructions</h2>
 				<p>Enter a list of words separated by commas and then click update to generate a new word search.
 					<br>

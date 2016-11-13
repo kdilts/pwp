@@ -7,3 +7,30 @@
 	align-items: center;
 	justify-content: center;
 }
+
+body {
+	background-color: grey;
+}
+
+#menu {
+	margin-right:10px;
+	height:80%;
+	width:20%;
+}
+
+textarea {
+	resize:none;
+}
+
+canvas {
+	border:2px solid black;
+}
+
+#instructions {
+	margin-left:10px;
+	height:80%;
+	width:20%;
+}
+h1 {
+	text-align: center;
+}
