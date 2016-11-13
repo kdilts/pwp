@@ -9,7 +9,7 @@
 		?>
 
 		<?php
-		require_once("../../lib/head_utils.php");
+		require_once("../../lib/head_utils_no_flickity.php");
 		?>
 
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>

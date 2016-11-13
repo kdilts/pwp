@@ -9,7 +9,7 @@
 		?>
 
 		<?php
-		require_once("../../lib/head_utils.php");
+		require_once("../../lib/head_utils_no_flickity.php");
 		?>
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
 		<script rel="script" src="javascript/convex.js" type="text/javascript"></script>
@@ -23,7 +23,7 @@
 		<h1>Convex Hull</h1>
 		<div class="flexcontainer">
 			<div class="flexobject">
-				<canvas style="border:2px solid black; margin-top:5px;" id="mycanvas"></canvas>
+				<canvas id="mycanvas"></canvas>
 				<form>
 					<input type="button" value="Random" id="random"/>
 					<input type="button" value="Clear" id="clear"/>

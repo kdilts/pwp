@@ -5,11 +5,11 @@
 		/*grab current directory*/
 		$CURRENT_DIR = __DIR__;
 		/*set page title here*/
-		$PAGE_TITLE = "Conway";
+		$PAGE_TITLE = "Tetris";
 		?>
 
 		<?php
-		require_once("../../lib/head_utils.php");
+		require_once("../../lib/head_utils_no_flickity.php");
 		?>
 
 		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>

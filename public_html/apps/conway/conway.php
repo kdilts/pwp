@@ -5,11 +5,11 @@
 		/*grab current directory*/
 		$CURRENT_DIR = __DIR__;
 		/*set page title here*/
-		$PAGE_TITLE = "Conway";
+		$PAGE_TITLE = "Game of Life";
 		?>
 
 		<?php
-		require_once("../../lib/head_utils.php");
+		require_once("../../lib/head_utils_no_flickity.php");
 		?>
 		<script type="text/javascript" src="grid.js"></script>
 		<script type="text/javascript" src="life.js"></script>
