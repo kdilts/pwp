@@ -5,7 +5,7 @@
 		/*grab current directory*/
 		$CURRENT_DIR = __DIR__;
 		/*set page title here*/
-		$PAGE_TITLE = "Conway";
+		$PAGE_TITLE = "Convex Hull";
 		?>
 
 		<?php
@@ -15,25 +15,25 @@
 		<script rel="script" src="javascript/convex.js" type="text/javascript"></script>
 
 	</head>
-	<body bgcolor="grey">
+	<body>
 		<?php
 		require_once("../../lib/navbar.php");
 		?>
-		<h1 style="margin-top:50px;">Convex Hull</h1>
 
+		<h1>Convex Hull</h1>
 		<div class="flexcontainer">
-			<div class="flexobject" style="margin-left:25%;">
+			<div class="flexobject">
 				<canvas style="border:2px solid black; margin-top:5px;" id="mycanvas"></canvas>
 				<form>
-					<input type="button" value="Random" id="random"></input>
-					<input type="button" value="Clear" id="clear"></input>
-					<input type="button" value="Calculate" id="calc"></input>
+					<input type="button" value="Random" id="random"/>
+					<input type="button" value="Clear" id="clear"/>
+					<input type="button" value="Calculate" id="calc"/>
 					<p>Number of points:</p>
-					<input type="textbox" value="20" id="numbox"></input>
+					<input type="text" value="20" id="numbox"/>
 				</form>
 			</div>
 
-			<div class="flexobject" style="margin-right:25%;">
+			<div class="flexobject">
 				<p>
 					The convex hull of a set of points is the set of points that make a polygon when connected, and contain all the other points. If the points represented nails in a board, the convex hull is the shape you would get by stretching a rubberband around all of the nails.
 					<br>
