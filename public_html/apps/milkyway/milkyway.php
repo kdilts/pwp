@@ -25,14 +25,18 @@
 			<div id="renderPanel"></div>
 			<div id="menuPanel">
 				<form>
-					<h1>Objects</h1><br><hr>
+					<h1>Objects</h1>
+					<hr>
 					<input type="checkbox" id="p1" checked>Population 1<br>
 					<input type="checkbox" id="br" checked>Galactic Bar<br>
-					<input type="checkbox" id="p2" checked>Population 2<hr>
+					<input type="checkbox" id="p2" checked>Population 2
+					<hr>
 					<input type="checkbox" id="oc" checked>Open Star Clusters<br>
 					<input type="checkbox" id="gc" checked>Globular Star Clusters<br>
-					<input type="checkbox" id="neb" checked>Gaseous Nebulae<hr>
-					<input type="checkbox" id="sun" checked>Sun<br><hr>
+					<input type="checkbox" id="neb" checked>Gaseous Nebulae
+					<hr>
+					<input type="checkbox" id="sun" checked>Sun
+					<hr>
 
 					<h1>Rotate</h1>
 					<input type="button" value="^" id="rotateUp">

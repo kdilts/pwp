@@ -7,6 +7,16 @@ body {
 }
 
 #renderPanel {
-	width: 80%;
+	width: 82%;
+	margin-right: 10px;
 	height: auto;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 20px;
 }
