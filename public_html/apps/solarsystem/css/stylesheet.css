@@ -5,3 +5,13 @@ body {
 .navbar {
 	margin-bottom: 0;
 }
+
+.flexbox {
+	display: flex;
+}
+
+#renderPanel {
+	width:80%;
+	height:auto;
+	margin-right: 10px;
+}

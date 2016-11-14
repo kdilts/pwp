@@ -8,7 +8,7 @@ window.onload = function(){
 		renderer.setSize(window.innerWidth * .70, window.innerHeight * .95);
 		camera.aspect = window.innerWidth * .70 / window.innerHeight * .95;
 		camera.updateProjectionMatrix();
-	}
+	};
 
 // create canvas for text label overlay
 	var canvas = document.createElement('canvas');
@@ -76,7 +76,7 @@ window.onload = function(){
 	var tagUncheckAllButton = document.getElementById('tagUncheckAllButton');
 
 	pullDown.onchange = function() {
-	}
+	};
 
 	if(!is.ie()) {
 		spdSlider.oninput = function() {
@@ -95,56 +95,56 @@ window.onload = function(){
 	upButton.onclick = function() {
 		controls.rotateUp(Math.PI / 180 * 5);
 		controls.update();
-	}
+	};
 
 	leftButton.onclick = function() {
 		controls.rotateLeft(Math.PI / 180 * 5);
 		controls.update();
-	}
+	};
 
 	rightButton.onclick = function() {
 		controls.rotateLeft(-Math.PI / 180 * 5);
 		controls.update();
-	}
+	};
 
 	downButton.onclick = function() {
 		controls.rotateUp(-Math.PI / 180 * 5);
 		controls.update();
-	}
+	};
 
 	zInButton.onclick = function() {
 		controls.dollyIn(1.1);
 		controls.update();
-	}
+	};
 
 	zOutButton.onclick = function() {
 		controls.dollyOut(1.1);
 		controls.update();
-	}
+	};
 
 	ringCheckAllButton.onclick = function() {
 		for(var p in ringBoxes) {
 			ringBoxes[p].checked = true;
 		}
-	}
+	};
 
 	ringUncheckAllButton.onclick = function() {
 		for(var p in ringBoxes) {
 			ringBoxes[p].checked = false;
 		}
-	}
+	};
 
 	tagCheckAllButton.onclick = function() {
 		for(var p in tagBoxes) {
 			tagBoxes[p].checked = true;
 		}
-	}
+	};
 
 	tagUncheckAllButton.onclick = function() {
 		for(var p in tagBoxes) {
 			tagBoxes[p].checked = false;
 		}
-	}
+	};
 
 // camera variables
 	var dist = 5;
@@ -177,7 +177,7 @@ window.onload = function(){
 		{id: 'Pluto', semimajor: 39.7, ecc: .252, i: 17 * rToD, w: 110 * rToD},
 		{id: 'Halley', semimajor: 17.9, ecc: .967, i: 162 * rToD, w: 58.4 * rToD},
 		{id: 'Eris', semimajor: 67.7, ecc: .441, i: 44 * rToD, w: 35.9 * rToD}
-	]
+	];
 
 //// build variable arrays that will represent the state of each planet
 	for(var p = 0; p < planetData.length; p++) {
@@ -246,14 +246,14 @@ window.onload = function(){
 		return (p2.x - p1.x) * (p3.x - p1.x)
 			+ (p2.y - p1.y) * (p3.y - p1.y)
 			+ (p2.z - p1.z) * (p3.z - p1.z);
-	}
+	};
 
 //// setup 3js mouse camera controls
 	var rotate = function() {
 		camera.position.set(Math.cos(camTheta) * dist, height, Math.sin(camTheta) * dist);
 		camera.lookAt(new THREE.Vector3(0, 0, 0));
 		camera.position.setLength(dist);
-	}
+	};
 
 	rotate();
 ////
@@ -267,7 +267,7 @@ window.onload = function(){
 			mx = e.clientX;
 			my = e.clientY;
 		}
-	}
+	};
 
 	var projector = new THREE.Projector();
 
@@ -388,4 +388,4 @@ window.onload = function(){
 ////
 
 	render();
-}
+};
