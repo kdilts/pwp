@@ -24,10 +24,10 @@
 		require_once("../../lib/navbar.php");
 		?>
 
-		<form style='margin-top:3px; float:right;'>
+		<form>
 
-			<b1>Center View On: </b1>
-			<select id='planetSelect' style='width:200'>
+			<h1>Center View On: </h1>
+			<select id='planetSelect'>
 				<option value = "0">Sun</option>
 				<option value = "1">Mercury</option>
 				<option value = "2">Venus</option>
@@ -40,81 +40,81 @@
 				<option value = "9">Pluto</option>
 				<option value = "10">Halley's Comet</option>
 				<option value = "11">Eris</option>
-			</select><br></br>
+			</select><br>
 
-			<b1>Simulation Speed: </b1><input type='range' id='slider' min='0' max ='50' value='1' step='1'>
-			<input type = 'textbox' id='simSpeed' style='width:10%' value='1' disabled><br></br>
+			<h1>Simulation Speed: </h1><input type='range' id='slider' min='0' max ='50' value='1' step='1'>
+			<input type = 'textbox' id='simSpeed' style='width:10%' value='1' disabled><br>
 
-			&nbsp;&nbsp;&nbsp;
-			<b1>Rotate:</b1><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type = 'button' id='up' value='^'></br>
+
+			<h1>Rotate:</h1><br>
+
+			<input type = 'button' id='up' value='^'>
 			<input type = 'button' id='left' value='<'>
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type = 'button' id='right' value='>'><br>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type = 'button' id='down' value='v'><br></br>
 
-			<b1>Zoom: </b1>
+			<input type = 'button' id='right' value='>'><br>
+
+			<input type = 'button' id='down' value='v'><br>
+
+			<h1>Zoom: </h1>
 			<input type='button' id='zoomIn' value='+'>
 			<input type='button' id='zoomOut' value='-'>
-			<br></br>
+			<br>
 
-			<b1>Show orbit rings: </b1><br></br>
+			<h1>Show orbit rings: </h1><br>
 
-			<b1>Mercury </b1>
+			<h1>Mercury </h1>
 			<input type='checkbox' id='mercuryRingBox' checked><br>
 
-			<b1>Venus </b1><input type='checkbox' id='venusRingBox' checked></br>
+			<h1>Venus </h1><input type='checkbox' id='venusRingBox' checked>
 
-			<b1>Earth </b1><input type='checkbox' id='earthRingBox' checked><br>
+			<h1>Earth </h1><input type='checkbox' id='earthRingBox' checked><br>
 
-			<b1>Mars </b1><input type='checkbox' id='marsRingBox' checked></br>
+			<h1>Mars </h1><input type='checkbox' id='marsRingBox' checked>
 
-			<b1>Jupiter </b1><input type='checkbox' id='jupiterRingBox' checked><br>
+			<h1>Jupiter </h1><input type='checkbox' id='jupiterRingBox' checked><br>
 
-			<b1>Saturn </b1><input type='checkbox' id='saturnRingBox' checked></br>
+			<h1>Saturn </h1><input type='checkbox' id='saturnRingBox' checked>
 
-			<b1>Uranus </b1><input type='checkbox' id='uranusRingBox' checked><br>
+			<h1>Uranus </h1><input type='checkbox' id='uranusRingBox' checked><br>
 
-			<b1>Neptune </b1><input type='checkbox' id='neptuneRingBox' checked></br
+			<h1>Neptune </h1><input type='checkbox' id='neptuneRingBox' checked></br
 			>
-			<b1>Pluto </b1><input type='checkbox' id='plutoRingBox' checked></br>
+			<h1>Pluto </h1><input type='checkbox' id='plutoRingBox' checked>
 
-			<b1>Halley </b1><input type='checkbox' id='halleyRingBox' checked><br>
+			<h1>Halley </h1><input type='checkbox' id='halleyRingBox' checked><br>
 
-			<b1>Eris </b1><input type='checkbox' id='erisRingBox' checked></br><br>
+			<h1>Eris </h1><input type='checkbox' id='erisRingBox' checked><br>
 
 			<input type='button' id='ringCheckAllButton' value='Check All'>
-			<input type='button' id='ringUncheckAllButton' value='Uncheck All'><br></br>
+			<input type='button' id='ringUncheckAllButton' value='Uncheck All'><br>
 
-			<b1>Show name tags: </b1><br></br>
+			<h1>Show name tags: </h1><br>
 
-			<b1>Mercury </b1>
+			<h1>Mercury </h1>
 			<input type='checkbox' id='mercuryTagBox' checked><br>
 
-			<b1>Venus </b1><input type='checkbox' id='venusTagBox' checked></br>
+			<h1>Venus </h1><input type='checkbox' id='venusTagBox' checked>
 
-			<b1>Earth </b1><input type='checkbox' id='earthTagBox' checked><br>
+			<h1>Earth </h1><input type='checkbox' id='earthTagBox' checked><br>
 
-			<b1>Mars </b1><input type='checkbox' id='marsTagBox' checked></br>
+			<h1>Mars </h1><input type='checkbox' id='marsTagBox' checked>
 
-			<b1>Jupiter </b1><input type='checkbox' id='jupiterTagBox' checked><br>
+			<h1>Jupiter </h1><input type='checkbox' id='jupiterTagBox' checked><br>
 
-			<b1>Saturn </b1><input type='checkbox' id='saturnTagBox' checked></br>
+			<h1>Saturn </h1><input type='checkbox' id='saturnTagBox' checked>
 
-			<b1>Uranus </b1><input type='checkbox' id='uranusTagBox' checked><br>
+			<h1>Uranus </h1><input type='checkbox' id='uranusTagBox' checked><br>
 
-			<b1>Neptune </b1><input type='checkbox' id='neptuneTagBox' checked></br
+			<h1>Neptune </h1><input type='checkbox' id='neptuneTagBox' checked></br
 			>
-			<b1>Pluto </b1><input type='checkbox' id='plutoTagBox' checked></br>
+			<h1>Pluto </h1><input type='checkbox' id='plutoTagBox' checked>
 
-			<b1>Halley </b1><input type='checkbox' id='halleyTagBox' checked><br>
+			<h1>Halley </h1><input type='checkbox' id='halleyTagBox' checked><br>
 
-			<b1>Eris </b1><input type='checkbox' id='erisTagBox' checked></br><br>
+			<h1>Eris </h1><input type='checkbox' id='erisTagBox' checked><br>
 
 			<input type='button' id='tagCheckAllButton' value='Check All'>
-			<input type='button' id='tagUncheckAllButton' value='Uncheck All'><br></br>
+			<input type='button' id='tagUncheckAllButton' value='Uncheck All'><br>
 
 		</form>
 
