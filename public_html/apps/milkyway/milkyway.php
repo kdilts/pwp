@@ -22,8 +22,7 @@
 		require_once("../../lib/navbar.php");
 		?>
 
-		<form style = "position:absolute; left:80%; top:50px">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<form>
 			<h1>Objects</h1><br><hr>
 			<input type="checkbox" id="p1" checked>Population 1<br>
 			<input type="checkbox" id="br" checked>Galactic Bar<br>
@@ -33,21 +32,21 @@
 			<input type="checkbox" id="neb" checked>Gaseous Nebulae<hr>
 			<input type="checkbox" id="sun" checked>Sun<br><hr>
 	
-			<h1 style = "position:absolute; left:58%; top:97%">Rotate</h1>
-			<input type="button" value="^" id="rotateUp" style = "position:absolute; left:63%; top:106%">
-			<input type="button" value="<-" id="rotateLeft" style = "position:absolute; left:50%; top:116%">
-			<input type="button" value="->" id="rotateRight" style = "position:absolute; left:74%; top:116%">
-			<input type="button" value="v" id="rotateDown" style = "position:absolute; left:63%; top:126%">
+			<h1>Rotate</h1>
+			<input type="button" value="^" id="rotateUp">
+			<input type="button" value="<-" id="rotateLeft">
+			<input type="button" value="->" id="rotateRight">
+			<input type="button" value="v" id="rotateDown">
 			
-			<h1 style = "position:absolute; left:13%; top:97%">Move</h1>
-			<input type="button" value="^" id="moveUp" style = "position:absolute; left:15%; top:106%">
-			<input type="button" value="<-" id="moveLeft" style = "position:absolute; left:1%; top:116%">
-			<input type="button" value="->" id="moveRight" style = "position:absolute; left:25%; top:116%">
-			<input type="button" value="v" id="moveDown"  = "position:absolute; left:15%; top:126%">
+			<h1>Move</h1>
+			<input type="button" value="^" id="moveUp">
+			<input type="button" value="<-" id="moveLeft">
+			<input type="button" value="->" id="moveRight">
+			<input type="button" value="v" id="moveDown">
 			
-			<h1 style = "position:absolute; left:40%; top:135%">Zoom</h1>
-			<input type="button" value="-" id="zoomOut" style = "position:absolute; left:35%; top:145%">
-			<input type="button" value="+" id="zoomIn" style = "position:absolute; left:53%; top:145%">
+			<h1>Zoom</h1>
+			<input type="button" value="-" id="zoomOut">
+			<input type="button" value="+" id="zoomIn">
 		</form>
 	</body>
 </html>
