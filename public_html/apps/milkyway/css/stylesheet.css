@@ -1,3 +1,12 @@
 body {
 	background-color: grey;
 }
+
+.flexbox {
+	display: flex;
+}
+
+#renderPanel {
+	width: 80%;
+	height: auto;
+}

@@ -1,8 +1,11 @@
 // Kevin Dilts 2016
 window.onload = function() {
+	var renderPanel = document.getElementById("renderPanel");
+	var menuPanel = document.getElementById("menuPanel");
+	
 	window.onresize = function() {
-		renderer.setSize(window.innerWidth * .77, window.innerHeight * .95);
-		camera.aspect = window.innerWidth * .77 / window.innerHeight * .95;
+		renderer.setSize(renderPanel.clientWidth, renderPanel.clientHeight);
+		camera.aspect = renderPanel.clientWidth / renderPanel.clientHeight;
 		camera.updateProjectionMatrix();
 	};
 
@@ -44,9 +47,8 @@ window.onload = function() {
 // gaseous - pinkish
 // sun - yellow
 
-//var sceneWidth = 1024*.975; var sceneHeight = 768*.95;
-	var sceneWidth = window.innerWidth * .77;
-	var sceneHeight = window.innerHeight * .95;
+	var sceneWidth = renderPanel.clientWidth;
+	var sceneHeight = renderPanel.clientHeight;
 
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera(75, sceneWidth / sceneHeight, 0.1, 1000);
@@ -59,8 +61,8 @@ window.onload = function() {
 	var theta = 0;
 
 	renderer.setSize(sceneWidth, sceneHeight);
-	renderer.domElement.setAttribute("style", "position:absolute; top:3px; left:0px; z-index:-1;");
-	document.body.appendChild(renderer.domElement);
+	renderer.domElement.setAttribute("style", "z-index:-1;");
+	renderPanel.appendChild(renderer.domElement);
 
 	var rotate = function() {
 		camera.position.set(Math.cos(theta) * dist, height, Math.sin(theta) * dist);
@@ -490,5 +492,6 @@ window.onload = function() {
 		zoomIn, zoomOut
 	];
 
+	window.onresize();
 	render();
 };
