@@ -1,22 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<link rel="stylesheet" href="../style.css" type="text/css"></link>
+		<?php
+		/*grab current directory*/
+		$CURRENT_DIR = __DIR__;
+		/*set page title here*/
+		$PAGE_TITLE = "Game of Life";
+		?>
+
+		<?php
+		require_once("../../lib/head_utils_no_flickity.php");
+		?>
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
+		<script src="javascript/three.min.js"></script>
+		<script src="javascript/Quaternion.js"></script>
+		<script src="javascript/OrbitControls.js"></script>
 	</head>
-	<body bgcolor = "grey">
-		<script src="js/three.min.js"></script>
-		<script src="js/Quaternion.js"></script>
-		<script src="js/OrbitControls.js"></script>
-		
+	<body>
+		<?php
+		require_once("../../lib/navbar.php");
+		?>
+
 		<form style = "position:absolute; left:80%; top:50px">
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<b1>Objects</b1><br><hr>
-			<input type="checkbox" id="p1" checked>Population 1</input><br>
-			<input type="checkbox" id="br" checked>Galactic Bar</input><br>
-			<input type="checkbox" id="p2" checked>Population 2</input><hr>
-			<input type="checkbox" id="oc" checked>Open Star Clusters</input><br>
-			<input type="checkbox" id="gc" checked>Globular Star Clusters</input><br>
-			<input type="checkbox" id="neb" checked>Gaseous Nebulae</input><hr>
-			<input type="checkbox" id="sun" checked>Sun</input><br><hr>
+			<input type="checkbox" id="p1" checked>Population 1<br>
+			<input type="checkbox" id="br" checked>Galactic Bar<br>
+			<input type="checkbox" id="p2" checked>Population 2<hr>
+			<input type="checkbox" id="oc" checked>Open Star Clusters<br>
+			<input type="checkbox" id="gc" checked>Globular Star Clusters<br>
+			<input type="checkbox" id="neb" checked>Gaseous Nebulae<hr>
+			<input type="checkbox" id="sun" checked>Sun<br><hr>
 	
 			<b1 style = "position:absolute; left:58%; top:97%">Rotate</b1>
 			<input type="button" value="^" id="rotateUp" style = "position:absolute; left:63%; top:106%"></input>
