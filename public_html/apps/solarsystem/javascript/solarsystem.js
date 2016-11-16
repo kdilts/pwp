@@ -1,12 +1,14 @@
 // Kevin Dilts 2016
 window.onload = function(){
 
+	var renderPanel = document.getElementById("renderPanel");
+	
 	window.onresize = function() {
-		canvas.width = window.innerWidth * .70;
-		canvas.height = window.innerHeight * .95 + 1;
+		canvas.width = renderPanel.clientWidth;
+		canvas.height = renderPanel.clientHeight;
 
-		renderer.setSize(window.innerWidth * .70, window.innerHeight * .95);
-		camera.aspect = window.innerWidth * .70 / window.innerHeight * .95;
+		renderer.setSize(renderPanel.clientWidth, renderPanel.clientHeight);
+		camera.aspect = renderPanel.clientWidth / renderPanel.clientHeight;
 		camera.updateProjectionMatrix();
 	};
 
@@ -18,7 +20,7 @@ window.onload = function(){
 	canvas.style.position = 'absolute';
 	canvas.style.left = 0;
 	canvas.style.top = 3;
-	document.body.appendChild(canvas);
+	renderPanel.appendChild(canvas);
 	var gfx = canvas.getContext('2d');
 
 // 3js setup
@@ -230,12 +232,12 @@ window.onload = function(){
 	}
 ////
 
-	renderer.setSize(window.innerWidth * .70, window.innerHeight * .95);
-	renderer.domElement.style.position = 'absolute';
-	renderer.domElement.style.left = 0;
-	renderer.domElement.style.top = 3;
+	renderer.setSize(renderPanel.clientWidth, renderPanel.clientHeight);
+	//renderer.domElement.style.position = 'absolute';
+	//renderer.domElement.style.left = 0;
+	//renderer.domElement.style.top = 3;
 //renderer.domElement.style.zIndex = -2;
-	document.body.appendChild(renderer.domElement);
+	renderPanel.appendChild(renderer.domElement);
 
 // function for determining if a point is in front of or behind plane
 	var zTest = function(cam, lookPt, testPt) {
