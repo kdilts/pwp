@@ -8,6 +8,7 @@ body {
 
 .flexbox {
 	display: flex;
+	height:100vh;
 }
 
 #renderPanel {
