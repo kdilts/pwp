@@ -62,60 +62,76 @@
 					<h1>Zoom: </h1>
 					<input type='button' id='zoomIn' value='+'>
 					<input type='button' id='zoomOut' value='-'>
-					
 
-					<h1>Show orbit rings: </h1>
 
-					<h1>Mercury </h1>
-					<input type='checkbox' id='mercuryRingBox' checked>
+					<table>
+						<tr>
+							<th>Body:</th>
+							<th>Show Rings:</th>
+							<th>Show Name Tags:</th>
+						</tr>
+						<tr>
+							<td>Mercury</td>
+							<td><input type='checkbox' id='mercuryRingBox' checked></td>
+							<td><input type='checkbox' id='mercuryTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Venus</td>
+							<td><input type='checkbox' id='venusRingBox' checked></td>
+							<td><input type='checkbox' id='venusTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Earth</td>
+							<td><input type='checkbox' id='earthRingBox' checked></td>
+							<td><input type='checkbox' id='earthTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Mars</td>
+							<td><input type='checkbox' id='marsRingBox' checked></td>
+							<td><input type='checkbox' id='marsTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Jupiter</td>
+							<td><input type='checkbox' id='jupiterRingBox' checked></td>
+							<td><input type='checkbox' id='jupiterTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Saturn</td>
+							<td><input type='checkbox' id='saturnRingBox' checked></td>
+							<td><input type='checkbox' id='saturnTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Uranus</td>
+							<td><input type='checkbox' id='uranusRingBox' checked></td>
+							<td><input type='checkbox' id='uranusTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Neptune</td>
+							<td><input type='checkbox' id='neptuneRingBox' checked></td>
+							<td><input type='checkbox' id='neptuneTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Pluto</td>
+							<td><input type='checkbox' id='plutoRingBox' checked></td>
+							<td><input type='checkbox' id='plutoTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Halley</td>
+							<td><input type='checkbox' id='halleyRingBox' checked></td>
+							<td><input type='checkbox' id='halleyTagBox' checked></td>
+						</tr>
+						<tr>
+							<td>Eris</td>
+							<td><input type='checkbox' id='erisRingBox' checked></td>
+							<td><input type='checkbox' id='erisTagBox' checked></td>
+						</tr>
+					</table>
 
-					<h1>Venus </h1><input type='checkbox' id='venusRingBox' checked>
-
-					<h1>Earth </h1><input type='checkbox' id='earthRingBox' checked>
-
-					<h1>Mars </h1><input type='checkbox' id='marsRingBox' checked>
-
-					<h1>Jupiter </h1><input type='checkbox' id='jupiterRingBox' checked>
-
-					<h1>Saturn </h1><input type='checkbox' id='saturnRingBox' checked>
-
-					<h1>Uranus </h1><input type='checkbox' id='uranusRingBox' checked>
-
-					<h1>Neptune </h1><input type='checkbox' id='neptuneRingBox' checked>
-
-					<h1>Pluto </h1><input type='checkbox' id='plutoRingBox' checked>
-
-					<h1>Halley </h1><input type='checkbox' id='halleyRingBox' checked>
-
-					<h1>Eris </h1><input type='checkbox' id='erisRingBox' checked>
-
+					<h1>Rings:</h1>
 					<input type='button' id='ringCheckAllButton' value='Check All'>
 					<input type='button' id='ringUncheckAllButton' value='Uncheck All'>
 
-					<h1>Show name tags: </h1>
-
-					<h1>Mercury </h1>
-					<input type='checkbox' id='mercuryTagBox' checked>
-
-					<h1>Venus </h1><input type='checkbox' id='venusTagBox' checked>
-
-					<h1>Earth </h1><input type='checkbox' id='earthTagBox' checked>
-
-					<h1>Mars </h1><input type='checkbox' id='marsTagBox' checked>
-
-					<h1>Jupiter </h1><input type='checkbox' id='jupiterTagBox' checked>
-
-					<h1>Saturn </h1><input type='checkbox' id='saturnTagBox' checked>
-
-					<h1>Uranus </h1><input type='checkbox' id='uranusTagBox' checked>
-
-					<h1>Neptune </h1><input type='checkbox' id='neptuneTagBox' checked>
-					<h1>Pluto </h1><input type='checkbox' id='plutoTagBox' checked>
-
-					<h1>Halley </h1><input type='checkbox' id='halleyTagBox' checked>
-
-					<h1>Eris </h1><input type='checkbox' id='erisTagBox' checked>
-
+					<h1>Name tags:</h1>
 					<input type='button' id='tagCheckAllButton' value='Check All'>
 					<input type='button' id='tagUncheckAllButton' value='Uncheck All'>
 
