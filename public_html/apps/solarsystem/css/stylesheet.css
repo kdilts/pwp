@@ -14,11 +14,6 @@ body {
 	width:80%;
 	height:auto;
 	margin-right: 10px;
-	border:2px solid red;
-}
-
-canvas {
-	border:2px solid blue;
 }
 
 table {

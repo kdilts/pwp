@@ -14,8 +14,8 @@ window.onload = function(){
 
 // create canvas for text label overlay
 	var canvas = document.createElement('canvas');
-	canvas.width = window.innerWidth * .70;
-	canvas.height = window.innerHeight * .95 + 1;
+	canvas.width = renderPanel.clientWidth;
+	canvas.height = renderPanel.clientHeight;
 	canvas.style.zIndex = 1;
 	canvas.style.position = 'absolute';
 	canvas.style.left = 0;
@@ -26,7 +26,7 @@ window.onload = function(){
 // 3js setup
 	var scene = new THREE.Scene();
 	var camera = new THREE.PerspectiveCamera(
-		75, window.innerWidth * .70 / window.innerHeight * .95, 0.1, 1000);
+		75, renderPanel.clientWidth / renderPanel.clientHeight, 0.1, 1000);
 	var renderer = new THREE.WebGLRenderer();
 
 	var controls = new THREE.OrbitControls(camera, canvas);
@@ -332,8 +332,8 @@ window.onload = function(){
 
 			var percX = (v.x + 1) / 2;
 			var percY = (-v.y + 1) / 2;
-			var left = percX * window.innerWidth * .70;
-			var top = percY * window.innerHeight * .95;
+			var left = percX * renderPanel.clientWidth;
+			var top = percY * renderPanel.clientHeight;
 
 			var pos2d = new THREE.Vector2(left.toFixed(0), top.toFixed(0));
 
