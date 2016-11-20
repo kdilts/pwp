@@ -16,3 +16,29 @@ body {
 	margin-right: 10px;
 	border:2px solid red;
 }
+
+canvas {
+	border:2px solid blue;
+}
+
+table {
+	margin-top:5px;
+}
+
+th {
+	padding:5px;
+}
+
+td input {
+	position: relative;
+	left: 45%;
+}
+
+td, th {
+	border:2px solid black;
+}
+
+h1, th {
+	font-size: 16px;
+	font-weight: bold;
+}
