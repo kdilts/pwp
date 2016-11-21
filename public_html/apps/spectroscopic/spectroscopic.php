@@ -5,7 +5,7 @@
 		/*grab current directory*/
 		$CURRENT_DIR = __DIR__;
 		/*set page title here*/
-		$PAGE_TITLE = "Game of Life";
+		$PAGE_TITLE = "Spectroscopic Binaries";
 		?>
 
 		<?php
