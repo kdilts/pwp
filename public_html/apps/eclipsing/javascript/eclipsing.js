@@ -36,14 +36,17 @@ var playing = true;
 var renderPanel;
 
 window.onload = function(){
+	window.onresize = function(){
+		cwidth = canvas.width = renderPanel.clientWidth;
+		cheight = canvas.height = renderPanel.clientHeight;
+	};
+
 	renderPanel = document.getElementById("renderPanel");
 	canvas = document.getElementById("myCanvas");
 
-	//canvas = document.createElement('canvas');
-	//canvas.setAttribute('style','position:relative; left:0; top:0; z-index:-1');
 	cwidth = canvas.width = renderPanel.clientWidth;
 	cheight = canvas.height = renderPanel.clientHeight;
-	//renderPanel.appendChild(canvas);
+
 	gfx = canvas.getContext('2d');
 
 	pulldown1 = document.getElementById('pulldown1');
@@ -82,6 +85,7 @@ window.onload = function(){
 			playing = true;
 			pauseButton.value = "Pause";
 		}
+		console.log(cwidth);
 	};
 
 	clearButton.onclick = function(){
@@ -102,11 +106,6 @@ window.onload = function(){
 	separationSlider.value = 14;
 
 	setInterval(render,1000/60);
-};
-
-window.onresize = function(){
-	cwidth = canvas.width = renderPanel.clientWidth;
-	cheight = canvas.height = renderPanel.clientHeight;
 };
 
 render = function(){
@@ -140,8 +139,8 @@ render = function(){
 	var pulldownTop = 30;
 
 	// pulldowns
-	pulldown1.setAttribute('style','position:absolute; left:'+(cwidth*.02+gfx.measureText('Star 1').width+20)+'; top:'+pulldownTop+'%');
-	pulldown2.setAttribute('style','position:absolute; left:'+(cwidth*.14+gfx.measureText('Star 2').width+20)+'; top:'+pulldownTop+'%');
+	pulldown1.setAttribute('style','position:absolute; left:'+(cwidth*.02+gfx.measureText('Star 1').width+20)+'px; top:'+pulldownTop+'%');
+	pulldown2.setAttribute('style','position:absolute; left:'+(cwidth*.14+gfx.measureText('Star 2').width+20)+'px; top:'+pulldownTop+'%');
 
 	// buttons
 	gfx.font = '14px verdana';
@@ -150,27 +149,24 @@ render = function(){
 	var pauseWidth = gfx.measureText('Pause   ').width;
 	var upButtonWidth = gfx.measureText('-->  ').width;
 	var downButtonWidth = gfx.measureText('<--  ').width;
-	submitButton.setAttribute('style',
-		'position:absolute; left:'+(cwidth*.02)+'; width:'+submitWidth);
-	clearButton.setAttribute('style',
-		'position:absolute; left:'+(cwidth*.02+submitWidth+5)+'; width:'+clearWidth);
-	pauseButton.setAttribute('style',
-		'position:absolute; left:'+(cwidth*.02+submitWidth+clearWidth+10)+'; width:'+pauseWidth);
+	submitButton.setAttribute('style','position:absolute; left:'+(cwidth*.02)+'px; width:'+submitWidth);
+	clearButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+submitWidth+10)+'px; width:'+clearWidth);
+	pauseButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+submitWidth+clearWidth+25)+'px; width:'+pauseWidth);
 
 	aDownButton.setAttribute('style','position:absolute; left:2%; top:'+aButtonTop+'%; width:'+downButtonWidth);
-	aUpButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+154+downButtonWidth)+'; top:'+aButtonTop+'%; width:'+upButtonWidth);
+	aUpButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+154+downButtonWidth)+'px; top:'+aButtonTop+'%; width:'+upButtonWidth);
 
 	sDownButton.setAttribute('style','position:absolute; left:2%; top:'+sButtonTop+'%; width:'+downButtonWidth);
-	sUpButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+154+downButtonWidth)+'; top:'+sButtonTop+'%; width:'+upButtonWidth);
+	sUpButton.setAttribute('style','position:absolute; left:'+(cwidth*.02+154+downButtonWidth)+'px; top:'+sButtonTop+'%; width:'+upButtonWidth);
 
 	// sliders
 	var sliderLeft = cwidth*.02+downButtonWidth;
 	if(!is.ie()){
-		angleSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'; top:'+aButtonTop+'%; width: 150');
-		separationSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'; top:'+sButtonTop+'%; width: 150');
+		angleSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'px; top:'+aButtonTop+'%; width: 150px');
+		separationSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'px; top:'+sButtonTop+'%; width: 150px');
 	}else{
-		angleSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'; top:'+(aButtonTop-1.5)+'%; width: 150');
-		separationSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'; top:'+(sButtonTop-1.5)+'%; width: 150');
+		angleSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'px; top:'+(aButtonTop-1.5)+'%; width: 150px');
+		separationSlider.setAttribute('style','position:absolute; left:'+sliderLeft+'px; top:'+(sButtonTop-1.5)+'%; width: 150px');
 	}
 
 	// text
@@ -178,7 +174,7 @@ render = function(){
 	gfx.font = '12px verdana';
 
 	gfx.fillText('Angle = '+angleSlider.value + "\xB0",
-		cwidth*.02, cheight*.1);
+		cwidth*.02, cheight*.12);
 
 	gfx.fillText('Separation = '+separationSlider.value + " Solar Radii",
 		cwidth*.02, cheight*.225);

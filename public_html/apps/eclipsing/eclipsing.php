@@ -19,15 +19,19 @@
 		<?php require_once("../../lib/navbar.php"); ?>
 
 		<div id="renderPanel">
-			<input type='button' id='submitButton' value='Enter Values'>
-			<input type='button' id='clearButton' value='Clear Graph'>
-			<input type='button' id='pauseButton' value='Pause'>
-			<input type = 'button' id = 'aDownButton' value = '<--'>
-			<input type = 'range' id = 'angleSlider' min='0' max = '90'>
-			<input type = 'button' id = 'aUpButton' value = '-->'>
-			<input type = 'button' id = 'sDownButton' value = '<--'>
-			<input type = 'range' id = 'separationSlider' min='2' max = '25'>
-			<input type = 'button' id = 'sUpButton' value = '-->'>
+
+			<input type='button' id='submitButton' value='Enter Values'/>
+			<input type='button' id='clearButton' value='Clear Graph'/>
+			<input type='button' id='pauseButton' value='Pause'/>
+
+			<input type = 'button' id = 'aDownButton' value = '<--'/>
+			<input type = 'range' id = 'angleSlider' min='0' max = '90'/>
+			<input type = 'button' id = 'aUpButton' value = '-->'/>
+
+			<input type = 'button' id = 'sDownButton' value = '<--'/>
+			<input type = 'range' id = 'separationSlider' min='2' max = '25'/>
+			<input type = 'button' id = 'sUpButton' value = '-->'/>
+
 			<select id='pulldown1'>
 				<option value = "B">B</option>
 				<option value = "A">A</option>
@@ -36,6 +40,7 @@
 				<option value = "K">K</option>
 				<option value = "M">M</option>
 			</select>
+
 			<select id='pulldown2'>
 				<option value = "B">B</option>
 				<option value = "A">A</option>
@@ -44,6 +49,7 @@
 				<option value = "K">K</option>
 				<option value = "M">M</option>
 			</select>
+
 			<canvas id="myCanvas"></canvas>
 		</div>
 
