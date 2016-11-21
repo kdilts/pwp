@@ -1,0 +1,11 @@
+body {
+	background-color: grey;
+}
+
+#renderPanel {
+	height:90vh;
+}
+
+#angleSlider, #separationSlider {
+	width:200px;
+}

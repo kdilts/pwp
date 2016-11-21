@@ -13,7 +13,6 @@ var pulldown1; var pulldown2;
 var angleSlider; var separationSlider;
 
 var centerX; var centerY;
-var currentTheta;
 
 var graphData = []; var graphIndex = 0;
 var frameIntensity = 0; var maxIntensity = -1;
@@ -34,12 +33,17 @@ var solarRad = 7;
 
 var playing = true;
 
+var renderPanel;
+
 window.onload = function(){
-	canvas = document.createElement('canvas');
-	canvas.setAttribute('style','position:absolute; left:0; top:0; z-index:-1');
-	cwidth = canvas.width = window.innerWidth;
-	cheight = canvas.height = window.innerHeight;
-	document.body.appendChild(canvas);
+	renderPanel = document.getElementById("renderPanel");
+	canvas = document.getElementById("myCanvas");
+
+	//canvas = document.createElement('canvas');
+	//canvas.setAttribute('style','position:relative; left:0; top:0; z-index:-1');
+	cwidth = canvas.width = renderPanel.clientWidth;
+	cheight = canvas.height = renderPanel.clientHeight;
+	//renderPanel.appendChild(canvas);
 	gfx = canvas.getContext('2d');
 
 	pulldown1 = document.getElementById('pulldown1');
@@ -68,7 +72,7 @@ window.onload = function(){
 		graphData = [];
 		graphIndex = 0;
 		maxIntensity = -1;
-	}
+	};
 
 	pauseButton.onclick = function(){
 		if(playing){
@@ -78,29 +82,32 @@ window.onload = function(){
 			playing = true;
 			pauseButton.value = "Pause";
 		}
-	}
+	};
 
 	clearButton.onclick = function(){
 		currentTheta = 0;
 		graphData = [];
 		graphIndex = 0;
 		maxIntensity = -1;
-	}
+	};
 
-	aDownButton.onclick = function(){ angleSlider.value--; }
-	aUpButton.onclick = function(){ angleSlider.value++; }
+	aDownButton.onclick = function(){ angleSlider.value--; };
+	aUpButton.onclick = function(){ angleSlider.value++; };
 
-	sDownButton.onclick = function(){ separationSlider.value--; }
-	sUpButton.onclick = function(){ separationSlider.value++; }
+	sDownButton.onclick = function(){ separationSlider.value--; };
+	sUpButton.onclick = function(){ separationSlider.value++; };
 
 	pulldown1.value = 'A';
 	angleSlider.value = 0;
 	separationSlider.value = 14;
 
 	setInterval(render,1000/60);
-}
+};
 
-window.onresize = function(){ render(); }
+window.onresize = function(){
+	cwidth = canvas.width = renderPanel.clientWidth;
+	cheight = canvas.height = renderPanel.clientHeight;
+};
 
 render = function(){
 	// handle window resize
@@ -115,9 +122,6 @@ render = function(){
 		centerX = cwidth*.32+(cwidth*.65/2);
 		centerY = cheight*.1+(cheight*.3/2);
 	}
-
-	cwidth = canvas.width = window.innerWidth;
-	cheight = canvas.height = window.innerHeight;
 
 	if(!cwidthold){
 		cwidthold = cwidth;
@@ -211,7 +215,7 @@ render = function(){
 	gfx.save();
 	gfx.translate(cwidth*.28, cheight*.75);
 	gfx.rotate(-Math.PI/2);
-	gfx.fillText('Intensity', 0,0)
+	gfx.fillText('Intensity', 0,0);
 	gfx.restore();
 
 	for(var i = 0; i < 6; i++){
@@ -266,7 +270,7 @@ render = function(){
 		}
 	}
 
-}
+};
 
 drawGraph = function(){
 	//cwidth*.32,cheight*.45,cwidth*.65,cheight*.45
@@ -325,7 +329,7 @@ drawGraph = function(){
 		gfx.fillText('Calculating...',0,0);
 		gfx.restore();
 	}
-}
+};
 
 count = function(){
 	// count star 1
@@ -348,9 +352,9 @@ count = function(){
 			if(imgData[i+1] === g){
 				if(imgData[i+2] === b){
 					count1++;
-				};
-			};
-		};
+				}
+			}
+		}
 	}
 
 	// count star 2
@@ -374,9 +378,9 @@ count = function(){
 			if(imgData[i+1] === g){
 				if(imgData[i+2] === b){
 					count2++;
-				};
-			};
-		};
+				}
+			}
+		}
 	}
 
 	var star1area = Math.floor(Math.pow((parseFloat(data[currentStar1][1])*solarRad),2)*Math.PI);
@@ -385,7 +389,7 @@ count = function(){
 	frameIntensity =
 		(count1*(parseInt(data[currentStar1][0])/parseInt(data[currentStar2][0])))/(star1area + star2area)
 		+ (count2*(parseInt(data[currentStar2][0])/parseInt(data[currentStar1][0])))/(star1area + star2area);
-}
+};
 
 drawStar1 = function(){
 	var c = data[currentStar1][2].substr(4,data[currentStar1][2].length-5);
@@ -404,7 +408,7 @@ drawStar1 = function(){
 		Math.PI*2
 	);
 	gfx.fill(); gfx.stroke();
-}
+};
 
 drawStar2 = function(){
 	// star 2
@@ -418,33 +422,33 @@ drawStar2 = function(){
 		Math.PI*2
 	);
 	gfx.fill(); gfx.stroke();
-}
+};
 
 arc = function(x,y,r){
 	gfx.beginPath();
 	gfx.arc(x,y,r,0,Math.PI*2);
 	gfx.fill(); gfx.stroke();
-}
+};
 
 line = function(x1,y1,x2,y2){
 	gfx.beginPath();
 	gfx.moveTo(x1,y1);
 	gfx.lineTo(x2,y2);
 	gfx.stroke();
-}
+};
 
 lerp = function(oldMin,oldMax,oldVal,newMin,newMax){
 	return (oldVal-oldMin)/(oldMax-oldMin)*(newMax-newMin)+newMin;
-}
+};
 
-dist = function(v1,v2){ return mag(add(v1,neg(v2))); }
+dist = function(v1,v2){ return mag(add(v1,neg(v2))); };
 
-vec2 = function(x,y){ this.x = x; this.y = y; }
-add = function(v1, v2){ return new vec2(v1.x+v2.x, v1.y+v2.y); }
-sub = function(v1, v2){ return new vec2(v1.x-v2.x, v1.y-v2.y); }
-neg = function(v){ return new vec2(-v.x, -v.y); }
-mag = function(v){ return Math.sqrt(Math.pow(v.x,2) + Math.pow(v.y,2)); }
-dot = function(v1,v2){ return v1.x*v2.x + v1.y*v2.y; }
-unit = function(v){ return new vec2(v.x/mag(v), v.y/mag(v)); }
-mult = function(v,s){ return new vec2(v.x*s, v.y*s); }
+vec2 = function(x,y){ this.x = x; this.y = y; };
+add = function(v1, v2){ return new vec2(v1.x+v2.x, v1.y+v2.y); };
+sub = function(v1, v2){ return new vec2(v1.x-v2.x, v1.y-v2.y); };
+neg = function(v){ return new vec2(-v.x, -v.y); };
+mag = function(v){ return Math.sqrt(Math.pow(v.x,2) + Math.pow(v.y,2)); };
+dot = function(v1,v2){ return v1.x*v2.x + v1.y*v2.y; };
+unit = function(v){ return new vec2(v.x/mag(v), v.y/mag(v)); };
+mult = function(v,s){ return new vec2(v.x*s, v.y*s); };
 
