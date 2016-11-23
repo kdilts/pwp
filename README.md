@@ -34,3 +34,6 @@ Nice work here! Your Milestone 2&alpha; passes at [Tier III](https://bootcamp-co
 - Lines 83, 84, 134, 135, 185, 186 are copypasta. You've already loaded these dependencies in the `<head>`, so remove them in the `<body>`.
 - Don't forget the `alt` attributes on lines 75 and 79.
 - Ideally, your custom CSS on line 7 should be loaded AFTER Flickity's CSS... just in case you need to override it. I like to group all my CSS links together in one section in the `<head>` just so it's easier to keep an eye on the order.
+
+## Milestone 2&beta; Feedback
+Nice work. Your Milestone 2&beta; passes at [Tier IV](https://bootcamp-coders.cnm.edu/projects/personal/rubric/). 
