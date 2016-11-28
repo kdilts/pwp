@@ -1,5 +1,15 @@
 body {
-	background-color: grey;
+	background-color: black;
+	background-image: url(../images/tile.png);
+	background-repeat: repeat;
+}
+
+p, h1, li, label {
+	color: red;
+}
+
+img {
+	border:2px lightgrey solid;
 }
 
 div.carousel-cell img {
