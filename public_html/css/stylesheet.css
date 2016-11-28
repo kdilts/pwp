@@ -8,6 +8,18 @@ p, h1, li, label {
 	color: red;
 }
 
+.navbar {
+	border: none;
+	background: rgba(128,128,128,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(128,128,128,1)), color-stop(41%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(128,128,128,1) 0%, rgba(0,0,0,1) 41%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#000000', GradientType=1 );
+}
+
 img {
 	border:2px lightgrey solid;
 }
