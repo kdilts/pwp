@@ -6,10 +6,8 @@ body {
 	margin-bottom: 0;
 }
 
-canvas {
-	z-index:-1;
-}
-
-#renderPanel {
+iframe {
+	width:100%;
 	height:90vh;
+	border:none;
 }
