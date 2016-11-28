@@ -19,7 +19,7 @@
 				<li><a href="<?php echo $PREFIX; ?>astronomy.php">Astronomy Apps</a></li>
 				<li><a href="<?php echo $PREFIX; ?>demos.php">Games and Demos</a></li>
 				<li><a href="<?php echo $PREFIX; ?>java.php">Java Downloads</a></li>
-				<li><a href="<?php echo $PREFIX; ?>resume.pdf">Resume</a></li>
+				<li><a href="<?php echo $PREFIX; ?>resume.pdf" target="_blank">Resume</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

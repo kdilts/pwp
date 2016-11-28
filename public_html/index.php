@@ -31,7 +31,7 @@
 							<li>UNM blah blah</li>
 							<li>Email: kevin@kevindilts.net</li>
 							<li>Phone: 505-206-6400</li>
-							<li><a href="resume.pdf">Resume</a></li>
+							<li><a href="resume.pdf" target="_blank">Resume</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-3">
