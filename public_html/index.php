@@ -8,9 +8,7 @@
 		$PAGE_TITLE = "PWP Milestone 2b";
 		?>
 
-		<?php
-		require_once("lib/head_utils.php");
-		?>
+		<?php require_once("lib/head_utils.php"); ?>
 
 		<!-- jQuery Form, Additional Methods, Validate -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
@@ -47,9 +45,7 @@
 						</ul>
 					</div>
 					<div class="col-sm-3">
-						<div style="width100%; height:100%; border:2px solid black">
-							<p>placeholder for email contact form</p>
-						</div>
+						<?php require_once("lib/email_form.php"); ?>
 					</div>
 				</div>
 			</div>
