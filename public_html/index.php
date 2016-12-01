@@ -39,13 +39,17 @@
 						<ul>
 							<li>Kevin Dilts</li>
 							<li>University of New Mexico</li>
-							<ul>
-								<li>Bachelor's of Computer Science - 2014</li>
-							</ul>
+							<li>
+								<ul>
+									<li>Bachelor's of Computer Science - 2014</li>
+								</ul>
+							</li>
 							<li>Central New Mexico Community College</li>
-							<ul>
-								<li>Deep Dive Coding Bootcamp - 2016</li>
-							</ul>
+							<li>
+								<ul>
+									<li>Deep Dive Coding Bootcamp - 2016</li>
+								</ul>
+							</li>
 							<li>Email: kevin@kevindilts.net</li>
 							<li>Phone: 505-206-6400</li>
 							<li><a href="resume.pdf" target="_blank">Resume</a></li>
