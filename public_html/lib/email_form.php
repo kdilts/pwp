@@ -1,5 +1,5 @@
 <!--Begin Contact Form-->
-<form id="contact-form" action="../public_html/php/mailer.php" method="post">
+<form id="contact-form" action="../public_html/php/mailer.php" method="post" novalidate>
 	<div class="form-group">
 		<label for="name">Name <span class="text-danger">*</span></label>
 		<div class="input-group">
