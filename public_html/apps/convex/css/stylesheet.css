@@ -1,6 +1,6 @@
 input {
 	font-size: 20px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Audiowide', cursive;
 	font-weight: bold;
 }
 
@@ -20,6 +20,7 @@ input {
 
 h1 {
 	text-align: center;
+	font-family: 'Audiowide', cursive;
 }
 
 canvas {
