@@ -29,3 +29,17 @@ canvas {
 body {
 	background-color: grey;
 }
+
+.navbar {
+	border: none;
+	background-image: url(../../../images/gradient.png);
+	background-size: contain;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:red;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color:blue;
+}

@@ -27,3 +27,17 @@ h1 {
 	height:80%;
 	width:20%;
 }
+
+.navbar {
+	border: none;
+	background-image: url(../../../images/gradient.png);
+	background-size: contain;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:red;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color:blue;
+}
