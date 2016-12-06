@@ -18,7 +18,7 @@ input {
 	margin-left:50px;
 }
 
-h1 {
+h1, a, p {
 	text-align: center;
 	font-family: 'Audiowide', cursive;
 }

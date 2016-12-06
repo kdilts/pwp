@@ -36,6 +36,10 @@ h1 {
 	font-family: 'Audiowide', cursive;
 }
 
+h1, p, a {
+	font-family: 'Audiowide', cursive;
+}
+
 .navbar {
 	border: none;
 	background-image: url(../../../images/gradient.png);

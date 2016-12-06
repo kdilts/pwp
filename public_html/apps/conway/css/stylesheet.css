@@ -40,7 +40,7 @@ input {
 	font-weight: bold;
 }
 
-h1 {
+h1, p, a {
 	text-align: center;
 	font-family: 'Audiowide', cursive;
 }
