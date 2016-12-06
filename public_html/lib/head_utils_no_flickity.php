@@ -36,4 +36,6 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 <!-- Latest compiled and minified Bootstrap JavaScript, all compiled plugins included -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
 <title><?php echo $PAGE_TITLE; ?></title>

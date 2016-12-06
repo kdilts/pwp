@@ -40,4 +40,6 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 
 <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
 <title><?php echo $PAGE_TITLE; ?></title>
