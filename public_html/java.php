@@ -23,40 +23,35 @@
 		</header>
 
 		<main>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<!-- div class="col-xs-12" -->
-					<!--div class="carousel" id="flick" data-flickity='{ "wrapAround": true }' -->
+					<div class="col-xs-12">
+						<h1 class="text-center">Java Downloads</h1>
+						<p class="text-center">These are .jar files containing java programs that I have built. They need to be downloaded onto a computer with a Java Run Time Environment in order to work.</p>
+					</div>
+				</div>
 
-					<!-- div class="carousel-cell cell-text" -->
+				<div class="row">
 
 					<div class="col-xs-6">
-						<a href="apps/jars/juliaset.jar">
-							<img src="images/juliaset.jpg" class="img-rounded img-responsive"/>
+						<a href="apps/jars/juliaset.jar" class="jlink">
+							<img src="images/juliaset.jpg" class="img-rounded img-responsive center-block"/>
 						</a>
-						<!--div class="cell-description" -->
-						<h1>Julia Set Fractals</h1>
+						<h1 class="text-center">Julia Set Fractals</h1>
 						<p>This program generates fractal images from a couple of parameters that the user enters. Someday I would like to make a new version that will allow the user to pan and zoom to explore the fractals they generate.</p>
 					</div>
-					<!-- /div -->
-					<!-- /div -->
 
-					<!--div class="carousel-cell cell-text" -->
 					<div class="col-xs-6">
-						<a href="apps/jars/game.jar">
-							<img src="images/zombie.jpg" class="img-rounded img-responsive"/>
+						<a href="apps/jars/game.jar" class="jlink">
+							<img src="images/zombie.jpg" class="img-rounded img-responsive center-block"/>
 						</a>
-						<!--div class="cell-description" -->
-						<h1>Zombie Defense</h1>
+						<h1 class="text-center">Zombie Defense</h1>
 						<p>This is a demo I made as proof of conecpt for a class project. Zombies come from the edges of the screen and try to eat the player. The play can build breakable walls and gun turrets to help fight them off. The game runs until the player dies.</p>
 					</div>
-					<!--/div -->
-					<!--/div -->
 
 				</div>
 			</div>
-			</div>
-			</div>
+
 		</main>
 
 	</body>
