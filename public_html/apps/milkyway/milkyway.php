@@ -27,15 +27,15 @@
 				<form>
 					<h1>Objects</h1>
 					<hr>
-					<input type="checkbox" id="p1" checked>Population 1<br>
-					<input type="checkbox" id="br" checked>Galactic Bar<br>
-					<input type="checkbox" id="p2" checked>Population 2
+					<input type="checkbox" id="p1" checked><label>Population 1</label><br>
+					<input type="checkbox" id="br" checked><label>Galactic Bar</label><br>
+					<input type="checkbox" id="p2" checked><label>Population 2</label>
 					<hr>
-					<input type="checkbox" id="oc" checked>Open Star Clusters<br>
-					<input type="checkbox" id="gc" checked>Globular Star Clusters<br>
-					<input type="checkbox" id="neb" checked>Gaseous Nebulae
+					<input type="checkbox" id="oc" checked><label>Open Star Clusters</label><br>
+					<input type="checkbox" id="gc" checked><label>Globular Star Clusters</label><br>
+					<input type="checkbox" id="neb" checked><label>Gaseous Nebulae</label>
 					<hr>
-					<input type="checkbox" id="sun" checked>Sun
+					<input type="checkbox" id="sun" checked><label>Sun</label>
 					<hr>
 
 					<h1>Rotate</h1>
