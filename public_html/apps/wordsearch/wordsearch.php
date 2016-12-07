@@ -24,19 +24,19 @@
 		<div class="flexcontainer">
 			<div id="menu">
 				<form>
-					Grid Size:<input id='sizebox' value='20' type='textbox' maxlength='2' size='2'/>
+					<label>Grid Size:</label><input id='sizebox' value='20' type='textbox' maxlength='2' size='2'/>
 					<br>
-					Word List:
+					<label>Word List:</label>
 					<textarea id='wordbox' rows='10' cols='50'></textarea>
 					<input id='submit' value='Update' type='button'/>
 					<br>
-					<input id='backward' type='checkbox'/>Backwards Words
+					<input id='backward' type='checkbox'/><label>Backwards Words</label>
 					<br>
-					<input id='diagonal' type='checkbox' checked/>Diagonal Words
+					<input id='diagonal' type='checkbox' checked/><label>Diagonal Words</label>
 					<br>
-					<input id='cross' type='checkbox'/>Crossed Words
+					<input id='cross' type='checkbox'/><label>Crossed Words</label>
 					<br>
-					<input id='show' type='checkbox' checked/>Show Answers
+					<input id='show' type='checkbox' checked/><label>Show Answers</label>
 				</form>
 			</div>
 
