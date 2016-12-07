@@ -1,5 +1,7 @@
 body {
-	background-color: grey;
+	background-color: black;
+	background-image: url(../../../images/tile.png);
+	background-repeat: repeat;
 }
 
 .navbar {
@@ -31,17 +33,22 @@ td input {
 }
 
 td, th {
-	border:2px solid black;
+	border:2px solid grey;
+	background-color: black;
+	font-family: 'Audiowide', cursive;
+	color:red;
 }
 
 h1, th {
 	font-size: 16px;
 	font-weight: bold;
 	font-family: 'Audiowide', cursive;
+	color:red;
 }
 
 h1, p, a {
 	font-family: 'Audiowide', cursive;
+	color:red;
 }
 
 .navbar {
