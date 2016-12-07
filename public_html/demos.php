@@ -26,6 +26,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
+						<h1 class="text-center">Games and Demos</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
 						<div class="carousel" id="flick" data-flickity='{ "wrapAround": true }'>
 
 							<div class="carousel-cell cell-text">
@@ -33,8 +38,8 @@
 									<img src="images/conway.jpg" class="img-rounded"/>
 								</a>
 								<div class="cell-description">
-									<h1>Conway's Game of Life</h1>
-									<p>conway</p>
+									<h1>Game of Life</h1>
+									<p>This is a cellular automaton. It simulates cells living and dying based upon the population of other cells around them. It comes up frequently in the study of AI. This particular game happens to be Turing complete, meaning that you could simulate a working computer if you set the initial configuration of cells correctly!</p>
 								</div>
 							</div>
 
@@ -44,7 +49,7 @@
 								</a>
 								<div class="cell-description">
 									<h1>Tetris</h1>
-									<p>tetris</p>
+									<p>This is a remake of the arcade classic, Tetris. I've always enjoyed playing this game, so I thought it would be fun to try to recreate it.</p>
 								</div>
 							</div>
 
@@ -54,7 +59,7 @@
 								</a>
 								<div class="cell-description">
 									<h1>Snake</h1>
-									<p>snake</p>
+									<p>Another remake of an old favorite.</p>
 								</div>
 							</div>
 
@@ -64,7 +69,7 @@
 								</a>
 								<div class="cell-description">
 									<h1>Convex Hull Problem</h1>
-									<p>convex</p>
+									<p>This is a program that I wrote when I was studying algorithms. It finds which points it can connect to make the simplest possible closed shape that contains all of the points.</p>
 								</div>
 							</div>
 
@@ -74,7 +79,7 @@
 								</a>
 								<div class="cell-description">
 									<h1>Word Search Generator</h1>
-									<p>word search</p>
+									<p>This program generates word search puzzles from a list of words the user enters.</p>
 								</div>
 							</div>
 
