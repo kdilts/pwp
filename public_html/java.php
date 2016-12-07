@@ -36,7 +36,7 @@
 						</a>
 						<!--div class="cell-description" -->
 						<h1>Julia Set Fractals</h1>
-						<p>julia</p>
+						<p>This program generates fractal images from a couple of parameters that the user enters. Someday I would like to make a new version that will allow the user to pan and zoom to explore the fractals they generate.</p>
 					</div>
 					<!-- /div -->
 					<!-- /div -->
@@ -48,7 +48,7 @@
 						</a>
 						<!--div class="cell-description" -->
 						<h1>Zombie Defense</h1>
-						<p>zombie</p>
+						<p>This is a demo I made as proof of conecpt for a class project. Zombies come from the edges of the screen and try to eat the player. The play can build breakable walls and gun turrets to help fight them off. The game runs until the player dies.</p>
 					</div>
 					<!--/div -->
 					<!--/div -->
