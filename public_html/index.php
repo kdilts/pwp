@@ -38,14 +38,14 @@
 					<div class="col-sm-6">
 						<ul>
 							<li>Kevin Dilts</li>
-							<li>University of New Mexico</li>
 							<li>
+								University of New Mexico
 								<ul>
 									<li>Bachelor's of Computer Science - 2014</li>
 								</ul>
 							</li>
-							<li>Central New Mexico Community College</li>
 							<li>
+								Central New Mexico Community College
 								<ul>
 									<li>Deep Dive Coding Bootcamp - 2016</li>
 								</ul>
