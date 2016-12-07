@@ -26,7 +26,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h1 class="text-center">Astronomy</h1>
+						<h1 class="text-center">Astronomy Apps</h1>
 						<p>
 							These are some of my favorite programs that I made while working for the Astronomy Department at the University of New Mexico. The full list can be found
 							<a href="http://physics.unm.edu/Courses/Rand/applets/index.php">here</a>. They are some of my first steps in learning web development, and javascript. All were designed to be run in a fixed size pop up window on the UNM lab computers, so they may not work well on cell phones, or certain resolutions.
