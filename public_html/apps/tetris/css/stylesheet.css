@@ -22,7 +22,7 @@ canvas {
 
 h1 {
 	text-align: center;
-	font-family: 'Audiowide', cursive;
+	/*font-family: 'Audiowide', cursive;*/
 	color:red;
 }
 
@@ -47,6 +47,6 @@ h1 {
 }
 
 h1, h2, p, a {
-	font-family: 'Audiowide', cursive;
+	/*font-family: 'Audiowide', cursive;*/
 	color:red;
 }
