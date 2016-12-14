@@ -38,10 +38,20 @@ h1 {
 	color:blue;
 }
 
-h1, p, a, label {
-	/*font-family: 'Audiowide', cursive;*/
+h1 {
 	color:red;
 }
+
+p, a, label {
+	/*font-family: 'Audiowide', cursive;*/
+	color:red;
+	font-size: 1.2em;
+}
+
+a {
+	font-weight: 900;
+}
+
 
 label {
 	margin-left:5px;

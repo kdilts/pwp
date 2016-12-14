@@ -29,3 +29,17 @@ iframe {
 h1, p, a {
 	/*font-family: 'Audiowide', cursive;*/
 }
+
+h1 {
+	color:red;
+}
+
+p, a, label {
+	/*font-family: 'Audiowide', cursive;*/
+	color:red;
+	font-size: 1.2em;
+}
+
+a {
+	font-weight: 900;
+}
