@@ -6,7 +6,15 @@ body {
 
 p, h1, li, label {
 	color: red;
-	font-family: 'Audiowide', cursive;
+	/*font-family: 'Audiowide', cursive;*/
+}
+
+p, li, a, label {
+	font-size: 1.2em;
+}
+
+a {
+	font-weight: 900;
 }
 
 .navbar {
